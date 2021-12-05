@@ -1,0 +1,138 @@
+@import "../base/variables";
+@import "../base/Querys.scss";
+@import "../base/misins";
+
+/* Login */
+
+.bd-login {
+  padding-top: 150px;
+  padding-bottom: 40px;
+  width: 25% !important;
+  outline: 0px !important;
+}
+
+.login-container,
+.registro-container {
+  text-align: center;
+  background: $bg-violet;
+  color: $bg-white;
+  font-weight: 1000;
+  border-radius: 6px;
+  border: 1px black solid;
+  padding: 10px 0;
+}
+
+.usuario,
+.contraseña {
+  margin: 10px 0;
+  outline: 0px !important;
+}
+
+.login-input,
+.ingresar,
+.registro-input {
+  outline: 0px !important;
+  outline-color: $bg-violet;
+  box-shadow: none !important;
+  text-align: center;
+}
+
+.ico-login {
+  width: 21%;
+  margin-bottom: 10px;
+}
+
+.form-text a {
+  color: $bg-yellow;
+}
+.form-text a:hover {
+  color: $bg-white;
+}
+
+.form-check-input {
+  float: none !important;
+}
+
+.txt-container {
+  color: #000;
+  text-align: center;
+  color: $bg-black;
+  font-weight: 1000;
+  border-radius: 6px;
+  padding: 20px;
+}
+
+.p-login {
+  font-size: 13px;
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1024px) {
+  .bd-login {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    width: 50% !important;
+    outline: 0px !important;
+  }
+
+  .ico-login {
+    width: 10%;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 990px) {
+  .bd-login {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    width: 90% !important;
+    outline: 0px !important;
+  }
+  .ico-login {
+    width: 20%;
+    margin-bottom: 20px;
+  }
+}
+
+/* End login */
+
+/* Registrarse */
+
+.bd-registro {
+  padding-top: 150px;
+  padding-bottom: 40px;
+  width: 50% !important;
+  outline: 0px !important;
+}
+
+.ico-registro {
+  width: 10%;
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1024px) {
+  .bd-registro {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    width: 50% !important;
+    outline: 0px !important;
+  }
+
+  .ico-registro {
+    width: 10%;
+    margin-bottom: 20px;
+  }
+}
+
+@media only screen and (min-width: 300px) and (max-width: 990px) {
+  .bd-registro {
+    padding-top: 100px;
+    padding-bottom: 40px;
+    width: 90% !important;
+    outline: 0px !important;
+  }
+  .ico-registro {
+    width: 20%;
+    margin-bottom: 20px;
+  }
+}
+
+/* End Registrarse */

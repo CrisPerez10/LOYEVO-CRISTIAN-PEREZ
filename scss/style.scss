@@ -1,0 +1,22 @@
+/* Imports */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Kavoon&family=Montserrat:wght@300;400&display=swap");
+@import "base/variables";
+@import "base/misins";
+@import "componentes/header";
+@import "componentes/inf-ad";
+@import "componentes/main-index";
+@import "componentes/main-tiendas";
+@import "componentes/footer";
+@import "componentes/aside";
+@import "componentes/def-cons-pol-dev.scss";
+@import "componentes/log-reg";
+@import "componentes/contacto";
+
+/* Selecctor universal */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: $font !important;
+}

@@ -1,0 +1,58 @@
+@import "../base/variables";
+@import "../base/Querys.scss";
+@import "../base/misins";
+
+/* Acceso a Whatsapp */
+
+.aside-grid {
+  position: fixed;
+  bottom: 35px;
+  right: 50px;
+  z-index: 9999;
+  width: 55px;
+}
+
+.aside-mascota {
+  position: fixed;
+  bottom: 15px;
+  left: 50px;
+  z-index: 9999;
+  width: 55px;
+}
+
+.img-container-grid div,
+.img-container-mascota div {
+  width: 100%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  border-radius: 6px;
+  transition: all 1.3s ease;
+}
+
+.img-container-grid img,
+.img-container-mascota img {
+  width: 65px;
+  border-radius: 6px;
+  transition: all 1.3s ease;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+}
+
+.img-container-grid img:hover,
+.img-container-mascota img:hover {
+  transform: scale(1.2);
+  -webkit-transform: scale(1.2);
+  -moz-transform: scale(1.2);
+}
+
+.img-container-mascota img {
+  width: 100px;
+  border-radius: 6px;
+  transition: all 1.3s ease;
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+}
+
+/* End Acceso a Whatsapps */

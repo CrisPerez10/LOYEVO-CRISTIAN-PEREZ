@@ -1,0 +1,65 @@
+@import "../base/variables";
+@import "../base/Querys.scss";
+@import "../base/misins";
+
+/* Texto def al consumidor/pol de devolución */
+
+.box-pd-conteiner {
+  @include flex(flex, center, none);
+  flex-wrap: wrap;
+  margin-top: 100px;
+}
+
+.box-pd-p {
+  @include flex(flex, center, 60%);
+  flex-wrap: wrap;
+  text-align: center;
+}
+
+/* End Texto def al consumidor/pol de devolución */
+
+/* Footer def al consumidor/pol de devolución */
+
+/* Redes */
+.redes {
+  @include flex(flex, center, none);
+}
+
+.li-redes {
+  @include flex(flex, center !important, 5%);
+  list-style: none;
+}
+
+.img-redes {
+  @include flex(flex, none, 11%);
+  flex-direction: column;
+}
+
+.link-redes {
+  display: flex;
+  text-decoration: none;
+  filter: brightness(0) saturate(100%) invert(100%) saturate(2%)
+    hue-rotate(221deg) brightness(106%) contrast(101%);
+  transition: all 1.3s ease;
+}
+
+.link-redes:hover {
+  filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%)
+    hue-rotate(2deg) brightness(110%) contrast(102%);
+  transform: scale(1.1);
+  color: $bg-yellow;
+  transform: scale(1.1);
+  transition: all 1.3s ease;
+}
+/* End Redes */
+
+/* Links footer */
+.footer-container-pddf {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 145px;
+  justify-content: center;
+}
+
+/* End Footer def al consumidor/pol de devolución  */

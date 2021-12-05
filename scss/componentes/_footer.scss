@@ -1,0 +1,77 @@
+@import "../base/variables";
+@import "../base/misins";
+
+/* Footer  */
+/* Redes */
+.redes {
+  @include flex(flex, center, none);
+}
+
+.li-redes {
+  @include flex(flex, center !important, 5%);
+  list-style: none;
+}
+
+.img-redes {
+  @include flex(flex, none, 11%);
+  flex-direction: column;
+}
+
+.link-redes {
+  display: flex;
+  text-decoration: none;
+  filter: brightness(0) saturate(100%) invert(100%) saturate(2%)
+    hue-rotate(221deg) brightness(106%) contrast(101%);
+  transition: all 1.3s ease;
+
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%)
+      hue-rotate(2deg) brightness(110%) contrast(102%);
+    transform: scale(1.1);
+    color: $bg-yellow;
+    transform: scale(1.1);
+    transition: all 1.3s ease;
+  }
+}
+
+/* Links footer */
+.footer-container {
+  width: 100%;
+  height: 145px;
+  justify-content: center;
+  margin-top: 60px !important;
+}
+
+.ul-footer {
+  @include flex(flex, center, none);
+  gap: 30px;
+}
+
+.li-footer {
+  @include flex(flex, center, none);
+  list-style: none;
+}
+
+.a-footer {
+  display: flex;
+  text-decoration: none;
+  color: $bg-white;
+  transition: all 1.3s ease;
+  font-weight: 600;
+
+  &:hover {
+    @include flex(flex, center, none);
+    list-style: none;
+    color: $bg-yellow;
+    transform: scale(1.1);
+    transition: all 1.3s ease;
+    font-weight: 600;
+  }
+}
+
+.p-footer {
+  @include flex(flex, center, none);
+  font-size: 11px;
+  color: $bg-white;
+  padding-left: 30px;
+}

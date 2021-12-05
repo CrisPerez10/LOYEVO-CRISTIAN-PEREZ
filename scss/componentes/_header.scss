@@ -1,0 +1,163 @@
+@import "../base/variables";
+@import "../base/Querys.scss";
+@import "../base/misins";
+
+/* Header */
+
+/* Navbar */
+.navbar-container {
+  @include flex(flex, none, 100%);
+}
+
+/* bg loyevo*/
+.bg-loyevo,
+.footer-container,
+.footer-container-pddf {
+  @include bg-loyevo(
+    linear-gradient(300deg, $bg-pink, $bg-violet, $bg-violet-2),
+    600% 600%,
+    AnimationName 20s ease infinite,
+    AnimationName 20s ease infinite,
+    AnimationName 20s ease infinite,
+    AnimationName 20s ease infinite
+  );
+}
+
+/* Animaciones de background gradient */
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 77%;
+  }
+  50% {
+    background-position: 100% 24%;
+  }
+  100% {
+    background-position: 0% 77%;
+  }
+}
+@-moz-keyframes AnimationName {
+  0% {
+    background-position: 0% 77%;
+  }
+  50% {
+    background-position: 100% 24%;
+  }
+  100% {
+    background-position: 0% 77%;
+  }
+}
+@-o-keyframes AnimationName {
+  0% {
+    background-position: 0% 77%;
+  }
+  50% {
+    background-position: 100% 24%;
+  }
+  100% {
+    background-position: 0% 77%;
+  }
+}
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 77%;
+  }
+  50% {
+    background-position: 100% 24%;
+  }
+  100% {
+    background-position: 0% 77%;
+  }
+}
+
+/* Logo */
+.logo-container {
+  @include flex(flex, left, 19%);
+}
+
+.logo-img {
+  width: 90%;
+}
+
+/* Barra de busqueda */
+.nav-container {
+  @include flex(flex, none, 100%);
+  border-radius: 6px;
+  margin-right: 16px !important;
+
+  &:hover {
+    border-radius: 6px;
+    background-color: $bg-yellow;
+    transition: all 2s ease;
+    background-image: url(/img/icos/buscar.png);
+    background-position: right;
+    background-size: contain;
+    background-repeat: no-repeat;
+  }
+}
+
+.input-search {
+  @include flex(flex, none, 100%);
+  height: auto;
+  transition: all 2s ease;
+  outline: none;
+  border: none;
+  border-color: none !important;
+
+  &:hover {
+    @include flex(flex, none, 96%);
+    transition: all 2s ease;
+    outline-width: 0;
+    outline: none;
+    border: none;
+    border-color: none !important;
+  }
+}
+
+.input-search input {
+  @include flex(flex, none, 100%);
+  padding: 2px;
+  border-radius: 6px;
+  outline-width: 0;
+  outline: none;
+  border: none;
+  border-color: none !important;
+}
+
+/* Links */
+.ul-container {
+  @include flex(flex, none, 45%);
+}
+
+.nav-item {
+  @include flex(flex, center, 100%);
+}
+
+.txt-navlink {
+  @include font(16px, 1000, $bg-white !important);
+  transition: all 1.3s ease;
+
+  &:hover {
+    @include font(16px, 1000, $bg-yellow !important);
+    transition: all 1.3s ease;
+  }
+
+  .ico {
+    font-size: 35px;
+  }
+}
+
+.nav-img {
+  width: 30%;
+  filter: brightness(0) saturate(100%) invert(100%) saturate(2%)
+    hue-rotate(221deg) brightness(106%) contrast(101%);
+  transition: all 1.3s ease;
+
+  &:hover {
+    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%)
+      hue-rotate(2deg) brightness(110%) contrast(102%);
+    transform: scale(1.1);
+    color: $bg-yellow;
+    transform: scale(1.1);
+    transition: all 1.3s ease;
+  }
+}

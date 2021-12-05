@@ -1,0 +1,63 @@
+@import "../base/variables";
+@import "../base/querys";
+@import "../base/misins";
+
+.title-h3 {
+  @include flex-grid(flex, center, none, wrap);
+  @include font(35px, 1000, $bg-violet-2);
+  margin: 60px 0 60px 0;
+}
+
+.input-container {
+  @include bg-loyevo(
+    linear-gradient(300deg, $bg-pink, $bg-violet, $bg-violet-2),
+    600% 600%,
+    AnimationName 20s ease infinite,
+    AnimationName 20s ease infinite,
+    AnimationName 20s ease infinite,
+    AnimationName 20s ease infinite
+  );
+  width: 100% !important;
+  padding: 15px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+    rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+  border-radius: 6px;
+  margin-bottom: 100px !important;
+}
+
+.input-contacto label {
+  @include font(16.5px, 700, $bg-white);
+  width: 100%;
+}
+
+.form-control {
+  resize: none;
+}
+
+.bnt-enviar {
+  margin: 15px 15px 0 0;
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  outline: none;
+}
+
+.bnt-enviar button {
+  width: 12%;
+  border-radius: 40px;
+  background: $bg-white;
+  border: 0.1px solid $bg-white;
+  color: $bg-black;
+  font-weight: 800;
+  padding: 5px;
+  height: 50px;
+
+  &:hover {
+    background: $bg-yellow;
+    color: $bg-black;
+    border: 0.1px solid $bg-violet;
+    font-weight: 800;
+  }
+}
+
+

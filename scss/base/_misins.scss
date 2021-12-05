@@ -1,0 +1,27 @@
+@mixin flex($flex, $center, $width) {
+  display: $flex;
+  justify-content: $center;
+  width: $width;
+}
+
+@mixin flex-grid($flex, $center, $width, $wrap) {
+  display: $flex;
+  justify-content: $center;
+  width: $width;
+  flex-wrap: $wrap;
+}
+
+@mixin font($size, $weigth, $color) {
+  font-size: $size;
+  font-weight: $weigth;
+  color: $color;
+}
+
+@mixin bg-loyevo($bg, $bg-size, $webkit, $moz, $o, $animation) {
+  background: $bg;
+  background-size: $bg-size;
+  -webkit-animation: $webkit;
+  -moz-animation: $moz;
+  -o-animation: $o;
+  animation: $animation;
+}

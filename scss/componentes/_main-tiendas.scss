@@ -1,0 +1,141 @@
+@import "../base/variables";
+@import "../base/misins";
+@import "../base/extends";
+
+/* Logo tiendas */
+
+.bg-logo {
+  @include flex(flex, center, 100%);
+  margin-top: 30px;
+}
+
+.bg-logo img {
+  width: 45%;
+}
+
+/* Nav tiendas */
+
+.navbar-tiendas {
+  @include flex(flex, center, none);
+  flex-wrap: wrap;
+  margin-top: 10px;
+}
+
+.ul-container-tiendas {
+  @include flex(flex, center, none);
+  align-items: center;
+  padding-left: 0 !important;
+  margin-bottom: 0 !important;
+  list-style: none;
+}
+
+.ul-container-tiendas li a {
+  @include font(18px, 1000, $bg-violet);
+  @include flex(flex, center, none);
+  text-decoration: none;
+  transition: all 1.3s ease;
+  margin: 20px;
+}
+
+.ul-container-tiendas li a:hover {
+  @include font(18px, 1000, $bg-pink-2);
+  transform: scale(1.1);
+  transition: all 1.3s ease;
+}
+
+.inf-ad-container-tiendas {
+  @include flex(flex, center !important, 100% !important);
+  flex-wrap: wrap;
+  padding: 0 !important;
+  list-style: none;
+  margin: 100px;
+}
+
+/* Productos tienda */
+
+.grid-container-marcas {
+  @include flex-grid(flex, center !important, 100% !important, wrap);
+  margin-top:80px;
+}
+
+.productos-container {
+  @include flex-grid(flex, center !important, 100% !important, wrap);
+  gap: 1px 1px;
+}
+
+.ofertas-container {
+  padding: 40px;
+}
+
+.col-productos {
+  @include flex(flex, center, 100%);
+  border-radius: 6px;
+  padding: 5px;
+  margin-bottom: 60px;
+  
+}
+
+.col-productos:hover {
+  transform: scale(1.1);
+  transition: all 1.2s ease;
+  border-radius: 6px;
+  z-index: 100;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+.productos-box {
+  width: 100%;
+}
+
+.item-link {
+  @include flex(flex, center, none);
+  
+}
+
+.ico3 {
+  width: 10%;
+}
+
+.card {
+  border: none !important;
+ 
+}
+
+.txt-conteiner {
+  display: flex;
+  flex-direction: column;
+}
+
+.txt-1,
+.txt-2 {
+  @extend %txt-tienda;
+}
+
+.txt-3 {
+  @extend %txt-tienda;
+  color: $bg-pink-2;
+}
+
+.container-btn {
+  display: flex;
+  align-items: center;
+  width: 100%;
+}
+
+.container-btn-comprar button {
+  width: 100%;
+  height: 50px;
+  font-weight: 800;
+  border-radius: 40px;
+  background: $bg-white;
+  border: 0.1px solid $bg-black;
+
+  &:hover {
+    background: $bg-yellow;
+    color: $bg-violet-2;
+    border: 0.1px solid $bg-black;
+    font-weight: 800;
+  }
+
+}
