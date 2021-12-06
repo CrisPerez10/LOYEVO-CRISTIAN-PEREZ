@@ -633,42 +633,67 @@
 /* Links */
 .ul-container {
   display: flex;
-  justify-content: none;
+  justify-content: center;
   width: 45%;
 }
 
-.nav-item {
+.li-container {
+  position: relative;
   display: flex;
   justify-content: center;
+  list-style: none;
+  align-items: center;
   width: 100%;
+  height: 70px;
+  z-index: 10;
 }
 
-.txt-navlink {
-  font-size: 16px;
-  font-weight: 1000;
-  color: #fff !important;
-  transition: all 1.3s ease;
+.li-container a {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100%;
+  text-align: center;
+  font-weight: 500;
+  z-index: 10;
+  text-decoration: none;
 }
-.txt-navlink:hover {
-  font-size: 16px;
-  font-weight: 1000;
-  color: #ffd500 !important;
-  transition: all 1.3s ease;
+
+.li-container a .ico {
+  position: relative;
+  display: block;
+  align-items: center;
+  font-size: 50px;
+  color: #fff;
+  z-index: 10;
 }
-.txt-navlink .ico {
+.li-container a .ico:hover {
+  transform: translateY(-10px);
+  background: #ffd500;
+  border-radius: 50%;
+  color: #000;
+  padding: 10px;
   font-size: 35px;
-}
-
-.nav-img {
-  width: 30%;
-  filter: brightness(0) saturate(100%) invert(100%) saturate(2%) hue-rotate(221deg) brightness(106%) contrast(101%);
   transition: all 1.3s ease;
 }
-.nav-img:hover {
-  filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%) hue-rotate(2deg) brightness(110%) contrast(102%);
-  transform: scale(1.1);
-  color: #ffd500;
-  transform: scale(1.1);
+
+.li-container a .txt-nav {
+  position: absolute;
+  color: #fff;
+  font-weight: 400;
+  font-size: 18px;
+  opacity: 0;
+}
+
+.li-container a:hover .txt-nav {
+  position: static;
+  opacity: 1;
+  text-decoration: none;
+  font-weight: 400;
+  font-size: 18px;
+  transform: translateY(2xpx);
   transition: all 1.3s ease;
 }
 
@@ -1342,11 +1367,11 @@
   display: flex;
   justify-content: center;
   width: 100%;
-  margin-top: 30px;
+  margin-top: 40px;
 }
 
 .bg-logo img {
-  width: 45%;
+  width: 30%;
 }
 
 /* Nav tiendas */
@@ -1378,14 +1403,15 @@
   text-decoration: none;
   transition: all 1.3s ease;
   margin: 20px;
+  border-bottom: 1px solid #6736bc;
 }
-
 .ul-container-tiendas li a:hover {
   font-size: 18px;
   font-weight: 1000;
   color: #e72385;
   transform: scale(1.1);
   transition: all 1.3s ease;
+  border-bottom: 1px solid #e72385;
 }
 
 .inf-ad-container-tiendas {
@@ -1427,7 +1453,6 @@
   padding: 5px;
   margin-bottom: 60px;
 }
-
 .col-productos:hover {
   transform: scale(1.1);
   transition: all 1.2s ease;
