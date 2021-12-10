@@ -5,8 +5,8 @@
 /* Fuente */
 /* Paleta de colores */
 /* Fuente */
-@media only screen and (min-width: 564px) and (max-width: 990px) {
-  /*  Barra de busqueda  */
+@media only screen and (min-width: 754px) and (max-width: 1280px) {
+  /*  Nav  */
   .input-search {
     display: flex;
     justify-content: none;
@@ -38,110 +38,77 @@
     flex-direction: row !important;
   }
 
-  .navbar-brand {
+  .marcas-container {
     margin: 0 !important;
+    padding: 0 !important;
   }
 
-  /*  Logo  */
-  .logo-container {
+  .grid-container-marcas {
+    margin-right: 0 !important;
+  }
+
+  /*  End Nav  */
+  /* Whatsapp */
+  .ico-whatsapp {
     display: flex;
-    justify-content: center;
-    width: 25%;
-    margin-right: 0 !important;
+    justify-content: none;
+    width: 10px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 10px;
+    z-index: 9999;
   }
 
-  .logo-img {
-    width: 100%;
-    margin-right: 0 !important;
+  .ico-whatsapp img {
+    display: flex;
+    justify-content: none;
+    width: 50%;
+    flex-wrap: wrap;
   }
-}
-@media only screen and (min-width: 200px) and (max-width: 563px) {
-  /*  Links */
-  .ul-container {
+
+  .aside-grid {
+    display: flex;
+    justify-content: none;
+    width: 55px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    z-index: 9999;
+  }
+
+  .img-container-grid div {
     display: flex;
     justify-content: none;
     width: 100%;
     flex-wrap: wrap;
-    text-align: center;
-    flex-direction: row !important;
-  }
-
-  .nav-item {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 1px;
-  }
-
-  .txt-navlink {
-    font-size: 16px;
-    font-weight: 1000;
-    color: #fff !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 6px;
     transition: all 1.3s ease;
   }
 
-  .nav-img {
-    width: 30%;
-    filter: brightness(0) saturate(100%) invert(100%) saturate(2%) hue-rotate(221deg) brightness(106%) contrast(101%);
+  .img-container-grid img {
+    width: 40px;
+    border-radius: 6px;
     transition: all 1.3s ease;
-    /* Logo */
-    /* Links */
-    /*  Barra de busqueda  */
-    /* Carrito */
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
   }
-  .nav-img:hover {
-    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%) hue-rotate(2deg) brightness(110%) contrast(102%);
-    transform: scale(1.1);
-    color: #ffd500;
-    transform: scale(1.1);
-    transition: all 1.3s ease;
+
+  .img-container-grid img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
   }
-  .nav-img .navbar-brand {
-    margin: 0 !important;
+
+  .aside-mascota {
+    display: none;
   }
-  .nav-img .logo-container {
-    display: flex;
-    justify-content: center;
-    width: 20%;
-    margin-right: 0 !important;
-  }
-  .nav-img .logo-img {
-    width: 100%;
-    margin-right: 0 !important;
-  }
-  .nav-img .ul-container {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    text-align: center;
-    flex-direction: row !important;
-  }
-  .nav-img .input-search {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    height: auto;
-    transition: all 2s ease;
-    outline: none;
-    border: none;
-    border-color: none !important;
-  }
-  .nav-img .input-search:hover {
-    display: flex;
-    justify-content: none;
-    width: 90%;
-    transition: all 2s ease;
-    outline-width: 0;
-    outline: none;
-    border: none;
-    border-color: none !important;
-  }
-  .nav-img .nav-img {
-    width: 30%;
-  }
-}
-/* Información adicional */
-@media only screen and (min-width: 581px) and (max-width: 1280px) {
+
+  /* End Whatsapp */
+  /* Información adicional */
   .inf-ad-container {
     margin: 80px 0;
     width: 100%;
@@ -181,144 +148,27 @@
     align-items: center;
     margin-bottom: 0 !important;
   }
-}
-@media only screen and (min-width: 200px) and (max-width: 580px) {
+
   .inf-ad-container {
-    display: none;
-  }
-}
-/* Whatsapp */
-@media only screen and (min-width: 550px) and (max-width: 1280px) {
-  .ico-whatsapp {
     display: flex;
-    justify-content: none;
-    width: 10px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 35px;
-    right: 45px;
-    z-index: 9999;
-  }
-
-  .ico-whatsapp img {
-    display: flex;
-    justify-content: none;
-    width: 50%;
-    flex-wrap: wrap;
-  }
-
-  .aside-grid {
-    display: flex;
-    justify-content: none;
-    width: 55px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 35px;
-    right: 60px;
-    z-index: 9999;
-  }
-
-  .img-container-grid div {
-    display: flex;
-    justify-content: none;
+    justify-content: center;
     width: 100%;
-    flex-wrap: wrap;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
   }
 
-  .img-container-grid img {
-    width: 40px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-  }
-
-  .img-container-grid img:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-  }
-
-  .aside-mascota {
-    display: none;
-  }
-}
-@media only screen and (min-width: 300px) and (max-width: 600px) {
-  .ico-whatsapp {
-    display: flex;
-    justify-content: none;
-    width: 8px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 35px;
-    right: 0px;
-    z-index: 9999;
-  }
-
-  .ico-whatsapp img {
-    display: flex;
-    justify-content: none;
-    width: 10%;
-    flex-wrap: wrap;
-  }
-
-  .aside-grid {
-    display: flex;
-    justify-content: none;
-    width: 40px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 20px;
-    right: 0px;
-    z-index: 9999;
-  }
-
-  .img-container-grid div {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    flex-wrap: wrap;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
-  }
-
-  .img-container-grid img {
-    width: 30px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-  }
-
-  .img-container-grid img:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-  }
-
-  .aside-mascota {
-    display: none;
-  }
-}
-/* Redes footer */
-@media only screen and (min-width: 550px) and (max-width: 1280px) {
+  /* End Información adicional */
+  /* Redes */
   .redes {
     display: flex;
     justify-content: center;
-    width: none;
+    width: 100%;
   }
 
   .li-redes {
     display: flex;
     justify-content: center !important;
-    width: 10%;
+    width: 9%;
     list-style: none;
+    margin-top: 2px;
   }
 
   .img-redes {
@@ -344,42 +194,7 @@
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
-  .redes {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .li-redes {
-    display: flex;
-    justify-content: center !important;
-    width: 20%;
-    list-style: none;
-    margin-top: 10px;
-  }
-
-  .img-redes {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .link-redes {
-    display: flex;
-    text-decoration: none;
-    filter: brightness(0) saturate(100%) invert(100%) saturate(2%) hue-rotate(221deg) brightness(106%) contrast(101%);
-    transition: all 1.3s ease;
-  }
-
-  .link-redes:hover {
-    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%) hue-rotate(2deg) brightness(110%) contrast(102%);
-    transform: scale(1.1);
-    color: #ffd500;
-    transform: scale(1.1);
-    transition: all 1.3s ease;
-  }
-
+  /* Redes */
   /* Links footer */
   .footer-container {
     width: 100%;
@@ -432,78 +247,220 @@
     color: #fff;
     padding-right: 20px;
   }
+
+  .inf-ad-container {
+    display: none;
+  }
+
+  /* End Redes */
+}
+@media only screen and (min-width: 300px) and (max-width: 754px) {
+  /* Whatsapp */
+  .ico-whatsapp {
+    display: flex;
+    justify-content: none;
+    width: 10px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 10px;
+    z-index: 9999;
+  }
+
+  .ico-whatsapp img {
+    display: flex;
+    justify-content: none;
+    width: 50%;
+    flex-wrap: wrap;
+  }
+
+  .aside-grid {
+    display: flex;
+    justify-content: none;
+    width: 55px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    z-index: 9999;
+  }
+
+  .img-container-grid div {
+    display: flex;
+    justify-content: none;
+    width: 100%;
+    flex-wrap: wrap;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 6px;
+    transition: all 1.3s ease;
+  }
+
+  .img-container-grid img {
+    width: 40px;
+    border-radius: 6px;
+    transition: all 1.3s ease;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+
+  .img-container-grid img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+  }
+
+  .aside-mascota {
+    display: none;
+  }
+
+  /* End Whatsapp */
+  /* Información adicional */
+  .inf-ad-container {
+    margin: 80px 0;
+    width: 100%;
+  }
+
+  .items-inf-ad {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+
+  .items-inf-ad:hover {
+    background: linear-gradient(300deg, #ffd500, #c74693);
+    background-size: 600% 100%;
+    -webkit-animation: AnimationName 20s ease infinit;
+    -moz-animation: AnimationName 20s ease infinit;
+    -o-animation: AnimationName 20s ease infinit;
+    animation: AnimationName 20s ease infinit;
+    border-radius: 10px;
+  }
+
+  .ico-inf-ad {
+    display: flex;
+    justify-content: none;
+    width: 22%;
+    align-items: center;
+  }
+
+  .txt-inf-ad {
+    font-size: 8px;
+    font-weight: 1000;
+    color: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0 !important;
+  }
+
+  .inf-ad-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* End Información adicional */
+  /* Redes */
+  .redes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .li-redes {
+    display: flex;
+    justify-content: center !important;
+    width: 15%;
+    list-style: none;
+    margin-top: 2px;
+  }
+
+  .img-redes {
+    display: flex;
+    justify-content: none;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .link-redes {
+    display: flex;
+    text-decoration: none;
+    filter: brightness(0) saturate(100%) invert(100%) saturate(2%) hue-rotate(221deg) brightness(106%) contrast(101%);
+    transition: all 1.3s ease;
+  }
+
+  .link-redes:hover {
+    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%) hue-rotate(2deg) brightness(110%) contrast(102%);
+    transform: scale(1.1);
+    color: #ffd500;
+    transform: scale(1.1);
+    transition: all 1.3s ease;
+  }
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
-  .productos-container {
-    display: flex;
-    justify-content: center !important;
-    width: 100% !important;
-    flex-wrap: wrap;
-    gap: 1px 1px;
-  }
-
-  .col-productos {
-    display: flex;
+  /* Redes */
+  /* Links footer */
+  .footer-container {
+    width: 100%;
+    height: 145px;
     justify-content: center;
-    width: 25%;
-    border-radius: 6px;
-    padding: 5px;
   }
 
-  .col-productos:hover {
-    transition: all 1.2s ease;
-    border-radius: 6px;
-    border-radius: 6px;
-    z-index: 100;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  }
-
-  .productos-box {
-    width: 50%;
-  }
-
-  /* Nav tiendas */
-  .navbar-tiendas {
+  .ul-footer {
     display: flex;
     justify-content: center;
     width: none;
-    flex-wrap: wrap;
-    margin-top: 10px;
+    gap: 24px;
   }
 
-  .ul-container-tiendas {
+  .li-footer {
     display: flex;
     justify-content: center;
     width: none;
-    align-items: center;
-    padding-left: 0 !important;
-    margin-bottom: 0 !important;
     list-style: none;
   }
 
-  .ul-container-tiendas li a {
-    font-size: 10px;
-    font-weight: 1000;
-    color: #6736bc;
+  .a-footer {
     display: flex;
     justify-content: center;
     width: none;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
     text-decoration: none;
     transition: all 1.3s ease;
-    margin: 20px;
   }
 
-  .inf-ad-container-tiendas {
+  .a-footer:hover {
     display: flex;
-    justify-content: center !important;
-    width: 100% !important;
-    flex-wrap: wrap;
-    padding: 0 !important;
+    justify-content: center;
+    width: none;
     list-style: none;
-    margin: 100px;
+    color: #ffd500;
+    transform: scale(1.1);
+    transition: all 1.3s ease;
+    font-weight: 600;
   }
+
+  .p-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+    padding-right: 20px;
+  }
+
+  .inf-ad-container {
+    display: none;
+  }
+
+  /* End Redes */
 }
-/* Header */
 /* Navbar */
 .navbar-container {
   display: flex;
@@ -699,8 +656,8 @@
 
 /* Paleta de colores */
 /* Fuente */
-@media only screen and (min-width: 564px) and (max-width: 990px) {
-  /*  Barra de busqueda  */
+@media only screen and (min-width: 754px) and (max-width: 1280px) {
+  /*  Nav  */
   .input-search {
     display: flex;
     justify-content: none;
@@ -732,110 +689,77 @@
     flex-direction: row !important;
   }
 
-  .navbar-brand {
+  .marcas-container {
     margin: 0 !important;
+    padding: 0 !important;
   }
 
-  /*  Logo  */
-  .logo-container {
+  .grid-container-marcas {
+    margin-right: 0 !important;
+  }
+
+  /*  End Nav  */
+  /* Whatsapp */
+  .ico-whatsapp {
     display: flex;
-    justify-content: center;
-    width: 25%;
-    margin-right: 0 !important;
+    justify-content: none;
+    width: 10px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 10px;
+    z-index: 9999;
   }
 
-  .logo-img {
-    width: 100%;
-    margin-right: 0 !important;
+  .ico-whatsapp img {
+    display: flex;
+    justify-content: none;
+    width: 50%;
+    flex-wrap: wrap;
   }
-}
-@media only screen and (min-width: 200px) and (max-width: 563px) {
-  /*  Links */
-  .ul-container {
+
+  .aside-grid {
+    display: flex;
+    justify-content: none;
+    width: 55px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    z-index: 9999;
+  }
+
+  .img-container-grid div {
     display: flex;
     justify-content: none;
     width: 100%;
     flex-wrap: wrap;
-    text-align: center;
-    flex-direction: row !important;
-  }
-
-  .nav-item {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 1px;
-  }
-
-  .txt-navlink {
-    font-size: 16px;
-    font-weight: 1000;
-    color: #fff !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 6px;
     transition: all 1.3s ease;
   }
 
-  .nav-img {
-    width: 30%;
-    filter: brightness(0) saturate(100%) invert(100%) saturate(2%) hue-rotate(221deg) brightness(106%) contrast(101%);
+  .img-container-grid img {
+    width: 40px;
+    border-radius: 6px;
     transition: all 1.3s ease;
-    /* Logo */
-    /* Links */
-    /*  Barra de busqueda  */
-    /* Carrito */
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
   }
-  .nav-img:hover {
-    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%) hue-rotate(2deg) brightness(110%) contrast(102%);
-    transform: scale(1.1);
-    color: #ffd500;
-    transform: scale(1.1);
-    transition: all 1.3s ease;
+
+  .img-container-grid img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
   }
-  .nav-img .navbar-brand {
-    margin: 0 !important;
+
+  .aside-mascota {
+    display: none;
   }
-  .nav-img .logo-container {
-    display: flex;
-    justify-content: center;
-    width: 20%;
-    margin-right: 0 !important;
-  }
-  .nav-img .logo-img {
-    width: 100%;
-    margin-right: 0 !important;
-  }
-  .nav-img .ul-container {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    text-align: center;
-    flex-direction: row !important;
-  }
-  .nav-img .input-search {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    height: auto;
-    transition: all 2s ease;
-    outline: none;
-    border: none;
-    border-color: none !important;
-  }
-  .nav-img .input-search:hover {
-    display: flex;
-    justify-content: none;
-    width: 90%;
-    transition: all 2s ease;
-    outline-width: 0;
-    outline: none;
-    border: none;
-    border-color: none !important;
-  }
-  .nav-img .nav-img {
-    width: 30%;
-  }
-}
-/* Información adicional */
-@media only screen and (min-width: 581px) and (max-width: 1280px) {
+
+  /* End Whatsapp */
+  /* Información adicional */
   .inf-ad-container {
     margin: 80px 0;
     width: 100%;
@@ -875,144 +799,27 @@
     align-items: center;
     margin-bottom: 0 !important;
   }
-}
-@media only screen and (min-width: 200px) and (max-width: 580px) {
+
   .inf-ad-container {
-    display: none;
-  }
-}
-/* Whatsapp */
-@media only screen and (min-width: 550px) and (max-width: 1280px) {
-  .ico-whatsapp {
     display: flex;
-    justify-content: none;
-    width: 10px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 35px;
-    right: 45px;
-    z-index: 9999;
-  }
-
-  .ico-whatsapp img {
-    display: flex;
-    justify-content: none;
-    width: 50%;
-    flex-wrap: wrap;
-  }
-
-  .aside-grid {
-    display: flex;
-    justify-content: none;
-    width: 55px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 35px;
-    right: 60px;
-    z-index: 9999;
-  }
-
-  .img-container-grid div {
-    display: flex;
-    justify-content: none;
+    justify-content: center;
     width: 100%;
-    flex-wrap: wrap;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
   }
 
-  .img-container-grid img {
-    width: 40px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-  }
-
-  .img-container-grid img:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-  }
-
-  .aside-mascota {
-    display: none;
-  }
-}
-@media only screen and (min-width: 300px) and (max-width: 600px) {
-  .ico-whatsapp {
-    display: flex;
-    justify-content: none;
-    width: 8px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 35px;
-    right: 0px;
-    z-index: 9999;
-  }
-
-  .ico-whatsapp img {
-    display: flex;
-    justify-content: none;
-    width: 10%;
-    flex-wrap: wrap;
-  }
-
-  .aside-grid {
-    display: flex;
-    justify-content: none;
-    width: 40px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 20px;
-    right: 0px;
-    z-index: 9999;
-  }
-
-  .img-container-grid div {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    flex-wrap: wrap;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
-  }
-
-  .img-container-grid img {
-    width: 30px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-  }
-
-  .img-container-grid img:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-  }
-
-  .aside-mascota {
-    display: none;
-  }
-}
-/* Redes footer */
-@media only screen and (min-width: 550px) and (max-width: 1280px) {
+  /* End Información adicional */
+  /* Redes */
   .redes {
     display: flex;
     justify-content: center;
-    width: none;
+    width: 100%;
   }
 
   .li-redes {
     display: flex;
     justify-content: center !important;
-    width: 10%;
+    width: 9%;
     list-style: none;
+    margin-top: 2px;
   }
 
   .img-redes {
@@ -1038,42 +845,7 @@
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
-  .redes {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .li-redes {
-    display: flex;
-    justify-content: center !important;
-    width: 20%;
-    list-style: none;
-    margin-top: 10px;
-  }
-
-  .img-redes {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .link-redes {
-    display: flex;
-    text-decoration: none;
-    filter: brightness(0) saturate(100%) invert(100%) saturate(2%) hue-rotate(221deg) brightness(106%) contrast(101%);
-    transition: all 1.3s ease;
-  }
-
-  .link-redes:hover {
-    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%) hue-rotate(2deg) brightness(110%) contrast(102%);
-    transform: scale(1.1);
-    color: #ffd500;
-    transform: scale(1.1);
-    transition: all 1.3s ease;
-  }
-
+  /* Redes */
   /* Links footer */
   .footer-container {
     width: 100%;
@@ -1126,76 +898,219 @@
     color: #fff;
     padding-right: 20px;
   }
+
+  .inf-ad-container {
+    display: none;
+  }
+
+  /* End Redes */
+}
+@media only screen and (min-width: 300px) and (max-width: 754px) {
+  /* Whatsapp */
+  .ico-whatsapp {
+    display: flex;
+    justify-content: none;
+    width: 10px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 10px;
+    z-index: 9999;
+  }
+
+  .ico-whatsapp img {
+    display: flex;
+    justify-content: none;
+    width: 50%;
+    flex-wrap: wrap;
+  }
+
+  .aside-grid {
+    display: flex;
+    justify-content: none;
+    width: 55px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    z-index: 9999;
+  }
+
+  .img-container-grid div {
+    display: flex;
+    justify-content: none;
+    width: 100%;
+    flex-wrap: wrap;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 6px;
+    transition: all 1.3s ease;
+  }
+
+  .img-container-grid img {
+    width: 40px;
+    border-radius: 6px;
+    transition: all 1.3s ease;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+
+  .img-container-grid img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+  }
+
+  .aside-mascota {
+    display: none;
+  }
+
+  /* End Whatsapp */
+  /* Información adicional */
+  .inf-ad-container {
+    margin: 80px 0;
+    width: 100%;
+  }
+
+  .items-inf-ad {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+
+  .items-inf-ad:hover {
+    background: linear-gradient(300deg, #ffd500, #c74693);
+    background-size: 600% 100%;
+    -webkit-animation: AnimationName 20s ease infinit;
+    -moz-animation: AnimationName 20s ease infinit;
+    -o-animation: AnimationName 20s ease infinit;
+    animation: AnimationName 20s ease infinit;
+    border-radius: 10px;
+  }
+
+  .ico-inf-ad {
+    display: flex;
+    justify-content: none;
+    width: 22%;
+    align-items: center;
+  }
+
+  .txt-inf-ad {
+    font-size: 8px;
+    font-weight: 1000;
+    color: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0 !important;
+  }
+
+  .inf-ad-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* End Información adicional */
+  /* Redes */
+  .redes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .li-redes {
+    display: flex;
+    justify-content: center !important;
+    width: 15%;
+    list-style: none;
+    margin-top: 2px;
+  }
+
+  .img-redes {
+    display: flex;
+    justify-content: none;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .link-redes {
+    display: flex;
+    text-decoration: none;
+    filter: brightness(0) saturate(100%) invert(100%) saturate(2%) hue-rotate(221deg) brightness(106%) contrast(101%);
+    transition: all 1.3s ease;
+  }
+
+  .link-redes:hover {
+    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%) hue-rotate(2deg) brightness(110%) contrast(102%);
+    transform: scale(1.1);
+    color: #ffd500;
+    transform: scale(1.1);
+    transition: all 1.3s ease;
+  }
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
-  .productos-container {
-    display: flex;
-    justify-content: center !important;
-    width: 100% !important;
-    flex-wrap: wrap;
-    gap: 1px 1px;
-  }
-
-  .col-productos {
-    display: flex;
+  /* Redes */
+  /* Links footer */
+  .footer-container {
+    width: 100%;
+    height: 145px;
     justify-content: center;
-    width: 25%;
-    border-radius: 6px;
-    padding: 5px;
   }
 
-  .col-productos:hover {
-    transition: all 1.2s ease;
-    border-radius: 6px;
-    border-radius: 6px;
-    z-index: 100;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  }
-
-  .productos-box {
-    width: 50%;
-  }
-
-  /* Nav tiendas */
-  .navbar-tiendas {
+  .ul-footer {
     display: flex;
     justify-content: center;
     width: none;
-    flex-wrap: wrap;
-    margin-top: 10px;
+    gap: 24px;
   }
 
-  .ul-container-tiendas {
+  .li-footer {
     display: flex;
     justify-content: center;
     width: none;
-    align-items: center;
-    padding-left: 0 !important;
-    margin-bottom: 0 !important;
     list-style: none;
   }
 
-  .ul-container-tiendas li a {
-    font-size: 10px;
-    font-weight: 1000;
-    color: #6736bc;
+  .a-footer {
     display: flex;
     justify-content: center;
     width: none;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
     text-decoration: none;
     transition: all 1.3s ease;
-    margin: 20px;
   }
 
-  .inf-ad-container-tiendas {
+  .a-footer:hover {
     display: flex;
-    justify-content: center !important;
-    width: 100% !important;
-    flex-wrap: wrap;
-    padding: 0 !important;
+    justify-content: center;
+    width: none;
     list-style: none;
-    margin: 100px;
+    color: #ffd500;
+    transform: scale(1.1);
+    transition: all 1.3s ease;
+    font-weight: 600;
   }
+
+  .p-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+    padding-right: 20px;
+  }
+
+  .inf-ad-container {
+    display: none;
+  }
+
+  /* End Redes */
 }
 /* Información adicional index  */
 .inf-ad-container {
@@ -1280,7 +1195,6 @@
   justify-content: center;
   width: 100%;
   border-radius: 6px;
-  padding: 5px;
   margin-bottom: 60px;
 }
 .col-ofertas:hover {
@@ -1304,28 +1218,10 @@
   margin: 100px 0 80px 0;
 }
 
-.grid-container-marcas {
-  display: flex;
-  justify-content: center !important;
-  width: 100% !important;
-  flex-wrap: wrap;
-  margin-bottom: 100px;
-}
-
-.marcas-container {
-  display: flex;
-  justify-content: center !important;
-  width: 100% !important;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: px !important;
-  padding: 30px 0;
-}
-
 .col-marcas {
   display: flex;
   justify-content: center !important;
-  width: 100%;
+  width: 80%;
   padding: 1px;
   border-radius: 100% !important;
 }
@@ -1516,7 +1412,7 @@
 .redes {
   display: flex;
   justify-content: center;
-  width: none;
+  width: auto;
 }
 
 .li-redes {
@@ -1598,8 +1494,8 @@
 
 /* Paleta de colores */
 /* Fuente */
-@media only screen and (min-width: 564px) and (max-width: 990px) {
-  /*  Barra de busqueda  */
+@media only screen and (min-width: 754px) and (max-width: 1280px) {
+  /*  Nav  */
   .input-search {
     display: flex;
     justify-content: none;
@@ -1631,110 +1527,77 @@
     flex-direction: row !important;
   }
 
-  .navbar-brand {
+  .marcas-container {
     margin: 0 !important;
+    padding: 0 !important;
   }
 
-  /*  Logo  */
-  .logo-container {
+  .grid-container-marcas {
+    margin-right: 0 !important;
+  }
+
+  /*  End Nav  */
+  /* Whatsapp */
+  .ico-whatsapp {
     display: flex;
-    justify-content: center;
-    width: 25%;
-    margin-right: 0 !important;
+    justify-content: none;
+    width: 10px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 10px;
+    z-index: 9999;
   }
 
-  .logo-img {
-    width: 100%;
-    margin-right: 0 !important;
+  .ico-whatsapp img {
+    display: flex;
+    justify-content: none;
+    width: 50%;
+    flex-wrap: wrap;
   }
-}
-@media only screen and (min-width: 200px) and (max-width: 563px) {
-  /*  Links */
-  .ul-container {
+
+  .aside-grid {
+    display: flex;
+    justify-content: none;
+    width: 55px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    z-index: 9999;
+  }
+
+  .img-container-grid div {
     display: flex;
     justify-content: none;
     width: 100%;
     flex-wrap: wrap;
-    text-align: center;
-    flex-direction: row !important;
-  }
-
-  .nav-item {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 1px;
-  }
-
-  .txt-navlink {
-    font-size: 16px;
-    font-weight: 1000;
-    color: #fff !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 6px;
     transition: all 1.3s ease;
   }
 
-  .nav-img {
-    width: 30%;
-    filter: brightness(0) saturate(100%) invert(100%) saturate(2%) hue-rotate(221deg) brightness(106%) contrast(101%);
+  .img-container-grid img {
+    width: 40px;
+    border-radius: 6px;
     transition: all 1.3s ease;
-    /* Logo */
-    /* Links */
-    /*  Barra de busqueda  */
-    /* Carrito */
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
   }
-  .nav-img:hover {
-    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%) hue-rotate(2deg) brightness(110%) contrast(102%);
-    transform: scale(1.1);
-    color: #ffd500;
-    transform: scale(1.1);
-    transition: all 1.3s ease;
+
+  .img-container-grid img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
   }
-  .nav-img .navbar-brand {
-    margin: 0 !important;
+
+  .aside-mascota {
+    display: none;
   }
-  .nav-img .logo-container {
-    display: flex;
-    justify-content: center;
-    width: 20%;
-    margin-right: 0 !important;
-  }
-  .nav-img .logo-img {
-    width: 100%;
-    margin-right: 0 !important;
-  }
-  .nav-img .ul-container {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    text-align: center;
-    flex-direction: row !important;
-  }
-  .nav-img .input-search {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    height: auto;
-    transition: all 2s ease;
-    outline: none;
-    border: none;
-    border-color: none !important;
-  }
-  .nav-img .input-search:hover {
-    display: flex;
-    justify-content: none;
-    width: 90%;
-    transition: all 2s ease;
-    outline-width: 0;
-    outline: none;
-    border: none;
-    border-color: none !important;
-  }
-  .nav-img .nav-img {
-    width: 30%;
-  }
-}
-/* Información adicional */
-@media only screen and (min-width: 581px) and (max-width: 1280px) {
+
+  /* End Whatsapp */
+  /* Información adicional */
   .inf-ad-container {
     margin: 80px 0;
     width: 100%;
@@ -1774,144 +1637,27 @@
     align-items: center;
     margin-bottom: 0 !important;
   }
-}
-@media only screen and (min-width: 200px) and (max-width: 580px) {
+
   .inf-ad-container {
-    display: none;
-  }
-}
-/* Whatsapp */
-@media only screen and (min-width: 550px) and (max-width: 1280px) {
-  .ico-whatsapp {
     display: flex;
-    justify-content: none;
-    width: 10px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 35px;
-    right: 45px;
-    z-index: 9999;
-  }
-
-  .ico-whatsapp img {
-    display: flex;
-    justify-content: none;
-    width: 50%;
-    flex-wrap: wrap;
-  }
-
-  .aside-grid {
-    display: flex;
-    justify-content: none;
-    width: 55px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 35px;
-    right: 60px;
-    z-index: 9999;
-  }
-
-  .img-container-grid div {
-    display: flex;
-    justify-content: none;
+    justify-content: center;
     width: 100%;
-    flex-wrap: wrap;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
   }
 
-  .img-container-grid img {
-    width: 40px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-  }
-
-  .img-container-grid img:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-  }
-
-  .aside-mascota {
-    display: none;
-  }
-}
-@media only screen and (min-width: 300px) and (max-width: 600px) {
-  .ico-whatsapp {
-    display: flex;
-    justify-content: none;
-    width: 8px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 35px;
-    right: 0px;
-    z-index: 9999;
-  }
-
-  .ico-whatsapp img {
-    display: flex;
-    justify-content: none;
-    width: 10%;
-    flex-wrap: wrap;
-  }
-
-  .aside-grid {
-    display: flex;
-    justify-content: none;
-    width: 40px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 20px;
-    right: 0px;
-    z-index: 9999;
-  }
-
-  .img-container-grid div {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    flex-wrap: wrap;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
-  }
-
-  .img-container-grid img {
-    width: 30px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-  }
-
-  .img-container-grid img:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-  }
-
-  .aside-mascota {
-    display: none;
-  }
-}
-/* Redes footer */
-@media only screen and (min-width: 550px) and (max-width: 1280px) {
+  /* End Información adicional */
+  /* Redes */
   .redes {
     display: flex;
     justify-content: center;
-    width: none;
+    width: 100%;
   }
 
   .li-redes {
     display: flex;
     justify-content: center !important;
-    width: 10%;
+    width: 9%;
     list-style: none;
+    margin-top: 2px;
   }
 
   .img-redes {
@@ -1937,42 +1683,7 @@
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
-  .redes {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .li-redes {
-    display: flex;
-    justify-content: center !important;
-    width: 20%;
-    list-style: none;
-    margin-top: 10px;
-  }
-
-  .img-redes {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .link-redes {
-    display: flex;
-    text-decoration: none;
-    filter: brightness(0) saturate(100%) invert(100%) saturate(2%) hue-rotate(221deg) brightness(106%) contrast(101%);
-    transition: all 1.3s ease;
-  }
-
-  .link-redes:hover {
-    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%) hue-rotate(2deg) brightness(110%) contrast(102%);
-    transform: scale(1.1);
-    color: #ffd500;
-    transform: scale(1.1);
-    transition: all 1.3s ease;
-  }
-
+  /* Redes */
   /* Links footer */
   .footer-container {
     width: 100%;
@@ -2025,82 +1736,225 @@
     color: #fff;
     padding-right: 20px;
   }
+
+  .inf-ad-container {
+    display: none;
+  }
+
+  /* End Redes */
+}
+@media only screen and (min-width: 300px) and (max-width: 754px) {
+  /* Whatsapp */
+  .ico-whatsapp {
+    display: flex;
+    justify-content: none;
+    width: 10px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 10px;
+    z-index: 9999;
+  }
+
+  .ico-whatsapp img {
+    display: flex;
+    justify-content: none;
+    width: 50%;
+    flex-wrap: wrap;
+  }
+
+  .aside-grid {
+    display: flex;
+    justify-content: none;
+    width: 55px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    z-index: 9999;
+  }
+
+  .img-container-grid div {
+    display: flex;
+    justify-content: none;
+    width: 100%;
+    flex-wrap: wrap;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 6px;
+    transition: all 1.3s ease;
+  }
+
+  .img-container-grid img {
+    width: 40px;
+    border-radius: 6px;
+    transition: all 1.3s ease;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+
+  .img-container-grid img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+  }
+
+  .aside-mascota {
+    display: none;
+  }
+
+  /* End Whatsapp */
+  /* Información adicional */
+  .inf-ad-container {
+    margin: 80px 0;
+    width: 100%;
+  }
+
+  .items-inf-ad {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+
+  .items-inf-ad:hover {
+    background: linear-gradient(300deg, #ffd500, #c74693);
+    background-size: 600% 100%;
+    -webkit-animation: AnimationName 20s ease infinit;
+    -moz-animation: AnimationName 20s ease infinit;
+    -o-animation: AnimationName 20s ease infinit;
+    animation: AnimationName 20s ease infinit;
+    border-radius: 10px;
+  }
+
+  .ico-inf-ad {
+    display: flex;
+    justify-content: none;
+    width: 22%;
+    align-items: center;
+  }
+
+  .txt-inf-ad {
+    font-size: 8px;
+    font-weight: 1000;
+    color: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0 !important;
+  }
+
+  .inf-ad-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* End Información adicional */
+  /* Redes */
+  .redes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .li-redes {
+    display: flex;
+    justify-content: center !important;
+    width: 15%;
+    list-style: none;
+    margin-top: 2px;
+  }
+
+  .img-redes {
+    display: flex;
+    justify-content: none;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .link-redes {
+    display: flex;
+    text-decoration: none;
+    filter: brightness(0) saturate(100%) invert(100%) saturate(2%) hue-rotate(221deg) brightness(106%) contrast(101%);
+    transition: all 1.3s ease;
+  }
+
+  .link-redes:hover {
+    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%) hue-rotate(2deg) brightness(110%) contrast(102%);
+    transform: scale(1.1);
+    color: #ffd500;
+    transform: scale(1.1);
+    transition: all 1.3s ease;
+  }
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
-  .productos-container {
-    display: flex;
-    justify-content: center !important;
-    width: 100% !important;
-    flex-wrap: wrap;
-    gap: 1px 1px;
-  }
-
-  .col-productos {
-    display: flex;
+  /* Redes */
+  /* Links footer */
+  .footer-container {
+    width: 100%;
+    height: 145px;
     justify-content: center;
-    width: 25%;
-    border-radius: 6px;
-    padding: 5px;
   }
 
-  .col-productos:hover {
-    transition: all 1.2s ease;
-    border-radius: 6px;
-    border-radius: 6px;
-    z-index: 100;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  }
-
-  .productos-box {
-    width: 50%;
-  }
-
-  /* Nav tiendas */
-  .navbar-tiendas {
+  .ul-footer {
     display: flex;
     justify-content: center;
     width: none;
-    flex-wrap: wrap;
-    margin-top: 10px;
+    gap: 24px;
   }
 
-  .ul-container-tiendas {
+  .li-footer {
     display: flex;
     justify-content: center;
     width: none;
-    align-items: center;
-    padding-left: 0 !important;
-    margin-bottom: 0 !important;
     list-style: none;
   }
 
-  .ul-container-tiendas li a {
-    font-size: 10px;
-    font-weight: 1000;
-    color: #6736bc;
+  .a-footer {
     display: flex;
     justify-content: center;
     width: none;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
     text-decoration: none;
     transition: all 1.3s ease;
-    margin: 20px;
   }
 
-  .inf-ad-container-tiendas {
+  .a-footer:hover {
     display: flex;
-    justify-content: center !important;
-    width: 100% !important;
-    flex-wrap: wrap;
-    padding: 0 !important;
+    justify-content: center;
+    width: none;
     list-style: none;
-    margin: 100px;
+    color: #ffd500;
+    transform: scale(1.1);
+    transition: all 1.3s ease;
+    font-weight: 600;
   }
+
+  .p-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+    padding-right: 20px;
+  }
+
+  .inf-ad-container {
+    display: none;
+  }
+
+  /* End Redes */
 }
 /* Acceso a Whatsapp */
 .aside-grid {
   position: fixed;
   bottom: 35px;
-  right: 50px;
+  right: 45px;
   z-index: 9999;
   width: 55px;
 }
@@ -2108,7 +1962,7 @@
 .aside-mascota {
   position: fixed;
   bottom: 15px;
-  left: 50px;
+  left: 25px;
   z-index: 9999;
   width: 55px;
 }
@@ -2150,8 +2004,8 @@
 /* End Acceso a Whatsapps */
 /* Paleta de colores */
 /* Fuente */
-@media only screen and (min-width: 564px) and (max-width: 990px) {
-  /*  Barra de busqueda  */
+@media only screen and (min-width: 754px) and (max-width: 1280px) {
+  /*  Nav  */
   .input-search {
     display: flex;
     justify-content: none;
@@ -2183,110 +2037,77 @@
     flex-direction: row !important;
   }
 
-  .navbar-brand {
+  .marcas-container {
     margin: 0 !important;
+    padding: 0 !important;
   }
 
-  /*  Logo  */
-  .logo-container {
+  .grid-container-marcas {
+    margin-right: 0 !important;
+  }
+
+  /*  End Nav  */
+  /* Whatsapp */
+  .ico-whatsapp {
     display: flex;
-    justify-content: center;
-    width: 25%;
-    margin-right: 0 !important;
+    justify-content: none;
+    width: 10px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 10px;
+    z-index: 9999;
   }
 
-  .logo-img {
-    width: 100%;
-    margin-right: 0 !important;
+  .ico-whatsapp img {
+    display: flex;
+    justify-content: none;
+    width: 50%;
+    flex-wrap: wrap;
   }
-}
-@media only screen and (min-width: 200px) and (max-width: 563px) {
-  /*  Links */
-  .ul-container {
+
+  .aside-grid {
+    display: flex;
+    justify-content: none;
+    width: 55px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    z-index: 9999;
+  }
+
+  .img-container-grid div {
     display: flex;
     justify-content: none;
     width: 100%;
     flex-wrap: wrap;
-    text-align: center;
-    flex-direction: row !important;
-  }
-
-  .nav-item {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 1px;
-  }
-
-  .txt-navlink {
-    font-size: 16px;
-    font-weight: 1000;
-    color: #fff !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 6px;
     transition: all 1.3s ease;
   }
 
-  .nav-img {
-    width: 30%;
-    filter: brightness(0) saturate(100%) invert(100%) saturate(2%) hue-rotate(221deg) brightness(106%) contrast(101%);
+  .img-container-grid img {
+    width: 40px;
+    border-radius: 6px;
     transition: all 1.3s ease;
-    /* Logo */
-    /* Links */
-    /*  Barra de busqueda  */
-    /* Carrito */
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
   }
-  .nav-img:hover {
-    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%) hue-rotate(2deg) brightness(110%) contrast(102%);
-    transform: scale(1.1);
-    color: #ffd500;
-    transform: scale(1.1);
-    transition: all 1.3s ease;
+
+  .img-container-grid img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
   }
-  .nav-img .navbar-brand {
-    margin: 0 !important;
+
+  .aside-mascota {
+    display: none;
   }
-  .nav-img .logo-container {
-    display: flex;
-    justify-content: center;
-    width: 20%;
-    margin-right: 0 !important;
-  }
-  .nav-img .logo-img {
-    width: 100%;
-    margin-right: 0 !important;
-  }
-  .nav-img .ul-container {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    text-align: center;
-    flex-direction: row !important;
-  }
-  .nav-img .input-search {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    height: auto;
-    transition: all 2s ease;
-    outline: none;
-    border: none;
-    border-color: none !important;
-  }
-  .nav-img .input-search:hover {
-    display: flex;
-    justify-content: none;
-    width: 90%;
-    transition: all 2s ease;
-    outline-width: 0;
-    outline: none;
-    border: none;
-    border-color: none !important;
-  }
-  .nav-img .nav-img {
-    width: 30%;
-  }
-}
-/* Información adicional */
-@media only screen and (min-width: 581px) and (max-width: 1280px) {
+
+  /* End Whatsapp */
+  /* Información adicional */
   .inf-ad-container {
     margin: 80px 0;
     width: 100%;
@@ -2326,144 +2147,27 @@
     align-items: center;
     margin-bottom: 0 !important;
   }
-}
-@media only screen and (min-width: 200px) and (max-width: 580px) {
+
   .inf-ad-container {
-    display: none;
-  }
-}
-/* Whatsapp */
-@media only screen and (min-width: 550px) and (max-width: 1280px) {
-  .ico-whatsapp {
     display: flex;
-    justify-content: none;
-    width: 10px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 35px;
-    right: 45px;
-    z-index: 9999;
-  }
-
-  .ico-whatsapp img {
-    display: flex;
-    justify-content: none;
-    width: 50%;
-    flex-wrap: wrap;
-  }
-
-  .aside-grid {
-    display: flex;
-    justify-content: none;
-    width: 55px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 35px;
-    right: 60px;
-    z-index: 9999;
-  }
-
-  .img-container-grid div {
-    display: flex;
-    justify-content: none;
+    justify-content: center;
     width: 100%;
-    flex-wrap: wrap;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
   }
 
-  .img-container-grid img {
-    width: 40px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-  }
-
-  .img-container-grid img:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-  }
-
-  .aside-mascota {
-    display: none;
-  }
-}
-@media only screen and (min-width: 300px) and (max-width: 600px) {
-  .ico-whatsapp {
-    display: flex;
-    justify-content: none;
-    width: 8px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 35px;
-    right: 0px;
-    z-index: 9999;
-  }
-
-  .ico-whatsapp img {
-    display: flex;
-    justify-content: none;
-    width: 10%;
-    flex-wrap: wrap;
-  }
-
-  .aside-grid {
-    display: flex;
-    justify-content: none;
-    width: 40px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 20px;
-    right: 0px;
-    z-index: 9999;
-  }
-
-  .img-container-grid div {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    flex-wrap: wrap;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
-  }
-
-  .img-container-grid img {
-    width: 30px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-  }
-
-  .img-container-grid img:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-  }
-
-  .aside-mascota {
-    display: none;
-  }
-}
-/* Redes footer */
-@media only screen and (min-width: 550px) and (max-width: 1280px) {
+  /* End Información adicional */
+  /* Redes */
   .redes {
     display: flex;
     justify-content: center;
-    width: none;
+    width: 100%;
   }
 
   .li-redes {
     display: flex;
     justify-content: center !important;
-    width: 10%;
+    width: 9%;
     list-style: none;
+    margin-top: 2px;
   }
 
   .img-redes {
@@ -2489,42 +2193,7 @@
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
-  .redes {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .li-redes {
-    display: flex;
-    justify-content: center !important;
-    width: 20%;
-    list-style: none;
-    margin-top: 10px;
-  }
-
-  .img-redes {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .link-redes {
-    display: flex;
-    text-decoration: none;
-    filter: brightness(0) saturate(100%) invert(100%) saturate(2%) hue-rotate(221deg) brightness(106%) contrast(101%);
-    transition: all 1.3s ease;
-  }
-
-  .link-redes:hover {
-    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%) hue-rotate(2deg) brightness(110%) contrast(102%);
-    transform: scale(1.1);
-    color: #ffd500;
-    transform: scale(1.1);
-    transition: all 1.3s ease;
-  }
-
+  /* Redes */
   /* Links footer */
   .footer-container {
     width: 100%;
@@ -2577,76 +2246,219 @@
     color: #fff;
     padding-right: 20px;
   }
+
+  .inf-ad-container {
+    display: none;
+  }
+
+  /* End Redes */
+}
+@media only screen and (min-width: 300px) and (max-width: 754px) {
+  /* Whatsapp */
+  .ico-whatsapp {
+    display: flex;
+    justify-content: none;
+    width: 10px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 10px;
+    z-index: 9999;
+  }
+
+  .ico-whatsapp img {
+    display: flex;
+    justify-content: none;
+    width: 50%;
+    flex-wrap: wrap;
+  }
+
+  .aside-grid {
+    display: flex;
+    justify-content: none;
+    width: 55px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    z-index: 9999;
+  }
+
+  .img-container-grid div {
+    display: flex;
+    justify-content: none;
+    width: 100%;
+    flex-wrap: wrap;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 6px;
+    transition: all 1.3s ease;
+  }
+
+  .img-container-grid img {
+    width: 40px;
+    border-radius: 6px;
+    transition: all 1.3s ease;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+
+  .img-container-grid img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+  }
+
+  .aside-mascota {
+    display: none;
+  }
+
+  /* End Whatsapp */
+  /* Información adicional */
+  .inf-ad-container {
+    margin: 80px 0;
+    width: 100%;
+  }
+
+  .items-inf-ad {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+
+  .items-inf-ad:hover {
+    background: linear-gradient(300deg, #ffd500, #c74693);
+    background-size: 600% 100%;
+    -webkit-animation: AnimationName 20s ease infinit;
+    -moz-animation: AnimationName 20s ease infinit;
+    -o-animation: AnimationName 20s ease infinit;
+    animation: AnimationName 20s ease infinit;
+    border-radius: 10px;
+  }
+
+  .ico-inf-ad {
+    display: flex;
+    justify-content: none;
+    width: 22%;
+    align-items: center;
+  }
+
+  .txt-inf-ad {
+    font-size: 8px;
+    font-weight: 1000;
+    color: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0 !important;
+  }
+
+  .inf-ad-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* End Información adicional */
+  /* Redes */
+  .redes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .li-redes {
+    display: flex;
+    justify-content: center !important;
+    width: 15%;
+    list-style: none;
+    margin-top: 2px;
+  }
+
+  .img-redes {
+    display: flex;
+    justify-content: none;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .link-redes {
+    display: flex;
+    text-decoration: none;
+    filter: brightness(0) saturate(100%) invert(100%) saturate(2%) hue-rotate(221deg) brightness(106%) contrast(101%);
+    transition: all 1.3s ease;
+  }
+
+  .link-redes:hover {
+    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%) hue-rotate(2deg) brightness(110%) contrast(102%);
+    transform: scale(1.1);
+    color: #ffd500;
+    transform: scale(1.1);
+    transition: all 1.3s ease;
+  }
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
-  .productos-container {
-    display: flex;
-    justify-content: center !important;
-    width: 100% !important;
-    flex-wrap: wrap;
-    gap: 1px 1px;
-  }
-
-  .col-productos {
-    display: flex;
+  /* Redes */
+  /* Links footer */
+  .footer-container {
+    width: 100%;
+    height: 145px;
     justify-content: center;
-    width: 25%;
-    border-radius: 6px;
-    padding: 5px;
   }
 
-  .col-productos:hover {
-    transition: all 1.2s ease;
-    border-radius: 6px;
-    border-radius: 6px;
-    z-index: 100;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  }
-
-  .productos-box {
-    width: 50%;
-  }
-
-  /* Nav tiendas */
-  .navbar-tiendas {
+  .ul-footer {
     display: flex;
     justify-content: center;
     width: none;
-    flex-wrap: wrap;
-    margin-top: 10px;
+    gap: 24px;
   }
 
-  .ul-container-tiendas {
+  .li-footer {
     display: flex;
     justify-content: center;
     width: none;
-    align-items: center;
-    padding-left: 0 !important;
-    margin-bottom: 0 !important;
     list-style: none;
   }
 
-  .ul-container-tiendas li a {
-    font-size: 10px;
-    font-weight: 1000;
-    color: #6736bc;
+  .a-footer {
     display: flex;
     justify-content: center;
     width: none;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
     text-decoration: none;
     transition: all 1.3s ease;
-    margin: 20px;
   }
 
-  .inf-ad-container-tiendas {
+  .a-footer:hover {
     display: flex;
-    justify-content: center !important;
-    width: 100% !important;
-    flex-wrap: wrap;
-    padding: 0 !important;
+    justify-content: center;
+    width: none;
     list-style: none;
-    margin: 100px;
+    color: #ffd500;
+    transform: scale(1.1);
+    transition: all 1.3s ease;
+    font-weight: 600;
   }
+
+  .p-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+    padding-right: 20px;
+  }
+
+  .inf-ad-container {
+    display: none;
+  }
+
+  /* End Redes */
 }
 /* Texto def al consumidor/pol de devolución */
 .box-pd-conteiner {
@@ -2716,8 +2528,8 @@
 /* End Footer def al consumidor/pol de devolución  */
 /* Paleta de colores */
 /* Fuente */
-@media only screen and (min-width: 564px) and (max-width: 990px) {
-  /*  Barra de busqueda  */
+@media only screen and (min-width: 754px) and (max-width: 1280px) {
+  /*  Nav  */
   .input-search {
     display: flex;
     justify-content: none;
@@ -2749,110 +2561,77 @@
     flex-direction: row !important;
   }
 
-  .navbar-brand {
+  .marcas-container {
     margin: 0 !important;
+    padding: 0 !important;
   }
 
-  /*  Logo  */
-  .logo-container {
+  .grid-container-marcas {
+    margin-right: 0 !important;
+  }
+
+  /*  End Nav  */
+  /* Whatsapp */
+  .ico-whatsapp {
     display: flex;
-    justify-content: center;
-    width: 25%;
-    margin-right: 0 !important;
+    justify-content: none;
+    width: 10px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 10px;
+    z-index: 9999;
   }
 
-  .logo-img {
-    width: 100%;
-    margin-right: 0 !important;
+  .ico-whatsapp img {
+    display: flex;
+    justify-content: none;
+    width: 50%;
+    flex-wrap: wrap;
   }
-}
-@media only screen and (min-width: 200px) and (max-width: 563px) {
-  /*  Links */
-  .ul-container {
+
+  .aside-grid {
+    display: flex;
+    justify-content: none;
+    width: 55px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    z-index: 9999;
+  }
+
+  .img-container-grid div {
     display: flex;
     justify-content: none;
     width: 100%;
     flex-wrap: wrap;
-    text-align: center;
-    flex-direction: row !important;
-  }
-
-  .nav-item {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 1px;
-  }
-
-  .txt-navlink {
-    font-size: 16px;
-    font-weight: 1000;
-    color: #fff !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 6px;
     transition: all 1.3s ease;
   }
 
-  .nav-img {
-    width: 30%;
-    filter: brightness(0) saturate(100%) invert(100%) saturate(2%) hue-rotate(221deg) brightness(106%) contrast(101%);
+  .img-container-grid img {
+    width: 40px;
+    border-radius: 6px;
     transition: all 1.3s ease;
-    /* Logo */
-    /* Links */
-    /*  Barra de busqueda  */
-    /* Carrito */
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
   }
-  .nav-img:hover {
-    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%) hue-rotate(2deg) brightness(110%) contrast(102%);
-    transform: scale(1.1);
-    color: #ffd500;
-    transform: scale(1.1);
-    transition: all 1.3s ease;
+
+  .img-container-grid img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
   }
-  .nav-img .navbar-brand {
-    margin: 0 !important;
+
+  .aside-mascota {
+    display: none;
   }
-  .nav-img .logo-container {
-    display: flex;
-    justify-content: center;
-    width: 20%;
-    margin-right: 0 !important;
-  }
-  .nav-img .logo-img {
-    width: 100%;
-    margin-right: 0 !important;
-  }
-  .nav-img .ul-container {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    text-align: center;
-    flex-direction: row !important;
-  }
-  .nav-img .input-search {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    height: auto;
-    transition: all 2s ease;
-    outline: none;
-    border: none;
-    border-color: none !important;
-  }
-  .nav-img .input-search:hover {
-    display: flex;
-    justify-content: none;
-    width: 90%;
-    transition: all 2s ease;
-    outline-width: 0;
-    outline: none;
-    border: none;
-    border-color: none !important;
-  }
-  .nav-img .nav-img {
-    width: 30%;
-  }
-}
-/* Información adicional */
-@media only screen and (min-width: 581px) and (max-width: 1280px) {
+
+  /* End Whatsapp */
+  /* Información adicional */
   .inf-ad-container {
     margin: 80px 0;
     width: 100%;
@@ -2892,144 +2671,27 @@
     align-items: center;
     margin-bottom: 0 !important;
   }
-}
-@media only screen and (min-width: 200px) and (max-width: 580px) {
+
   .inf-ad-container {
-    display: none;
-  }
-}
-/* Whatsapp */
-@media only screen and (min-width: 550px) and (max-width: 1280px) {
-  .ico-whatsapp {
     display: flex;
-    justify-content: none;
-    width: 10px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 35px;
-    right: 45px;
-    z-index: 9999;
-  }
-
-  .ico-whatsapp img {
-    display: flex;
-    justify-content: none;
-    width: 50%;
-    flex-wrap: wrap;
-  }
-
-  .aside-grid {
-    display: flex;
-    justify-content: none;
-    width: 55px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 35px;
-    right: 60px;
-    z-index: 9999;
-  }
-
-  .img-container-grid div {
-    display: flex;
-    justify-content: none;
+    justify-content: center;
     width: 100%;
-    flex-wrap: wrap;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
   }
 
-  .img-container-grid img {
-    width: 40px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-  }
-
-  .img-container-grid img:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-  }
-
-  .aside-mascota {
-    display: none;
-  }
-}
-@media only screen and (min-width: 300px) and (max-width: 600px) {
-  .ico-whatsapp {
-    display: flex;
-    justify-content: none;
-    width: 8px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 35px;
-    right: 0px;
-    z-index: 9999;
-  }
-
-  .ico-whatsapp img {
-    display: flex;
-    justify-content: none;
-    width: 10%;
-    flex-wrap: wrap;
-  }
-
-  .aside-grid {
-    display: flex;
-    justify-content: none;
-    width: 40px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 20px;
-    right: 0px;
-    z-index: 9999;
-  }
-
-  .img-container-grid div {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    flex-wrap: wrap;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
-  }
-
-  .img-container-grid img {
-    width: 30px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-  }
-
-  .img-container-grid img:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-  }
-
-  .aside-mascota {
-    display: none;
-  }
-}
-/* Redes footer */
-@media only screen and (min-width: 550px) and (max-width: 1280px) {
+  /* End Información adicional */
+  /* Redes */
   .redes {
     display: flex;
     justify-content: center;
-    width: none;
+    width: 100%;
   }
 
   .li-redes {
     display: flex;
     justify-content: center !important;
-    width: 10%;
+    width: 9%;
     list-style: none;
+    margin-top: 2px;
   }
 
   .img-redes {
@@ -3055,42 +2717,7 @@
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
-  .redes {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .li-redes {
-    display: flex;
-    justify-content: center !important;
-    width: 20%;
-    list-style: none;
-    margin-top: 10px;
-  }
-
-  .img-redes {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .link-redes {
-    display: flex;
-    text-decoration: none;
-    filter: brightness(0) saturate(100%) invert(100%) saturate(2%) hue-rotate(221deg) brightness(106%) contrast(101%);
-    transition: all 1.3s ease;
-  }
-
-  .link-redes:hover {
-    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%) hue-rotate(2deg) brightness(110%) contrast(102%);
-    transform: scale(1.1);
-    color: #ffd500;
-    transform: scale(1.1);
-    transition: all 1.3s ease;
-  }
-
+  /* Redes */
   /* Links footer */
   .footer-container {
     width: 100%;
@@ -3143,76 +2770,219 @@
     color: #fff;
     padding-right: 20px;
   }
+
+  .inf-ad-container {
+    display: none;
+  }
+
+  /* End Redes */
+}
+@media only screen and (min-width: 300px) and (max-width: 754px) {
+  /* Whatsapp */
+  .ico-whatsapp {
+    display: flex;
+    justify-content: none;
+    width: 10px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 10px;
+    z-index: 9999;
+  }
+
+  .ico-whatsapp img {
+    display: flex;
+    justify-content: none;
+    width: 50%;
+    flex-wrap: wrap;
+  }
+
+  .aside-grid {
+    display: flex;
+    justify-content: none;
+    width: 55px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    z-index: 9999;
+  }
+
+  .img-container-grid div {
+    display: flex;
+    justify-content: none;
+    width: 100%;
+    flex-wrap: wrap;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 6px;
+    transition: all 1.3s ease;
+  }
+
+  .img-container-grid img {
+    width: 40px;
+    border-radius: 6px;
+    transition: all 1.3s ease;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+
+  .img-container-grid img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+  }
+
+  .aside-mascota {
+    display: none;
+  }
+
+  /* End Whatsapp */
+  /* Información adicional */
+  .inf-ad-container {
+    margin: 80px 0;
+    width: 100%;
+  }
+
+  .items-inf-ad {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+
+  .items-inf-ad:hover {
+    background: linear-gradient(300deg, #ffd500, #c74693);
+    background-size: 600% 100%;
+    -webkit-animation: AnimationName 20s ease infinit;
+    -moz-animation: AnimationName 20s ease infinit;
+    -o-animation: AnimationName 20s ease infinit;
+    animation: AnimationName 20s ease infinit;
+    border-radius: 10px;
+  }
+
+  .ico-inf-ad {
+    display: flex;
+    justify-content: none;
+    width: 22%;
+    align-items: center;
+  }
+
+  .txt-inf-ad {
+    font-size: 8px;
+    font-weight: 1000;
+    color: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0 !important;
+  }
+
+  .inf-ad-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* End Información adicional */
+  /* Redes */
+  .redes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .li-redes {
+    display: flex;
+    justify-content: center !important;
+    width: 15%;
+    list-style: none;
+    margin-top: 2px;
+  }
+
+  .img-redes {
+    display: flex;
+    justify-content: none;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .link-redes {
+    display: flex;
+    text-decoration: none;
+    filter: brightness(0) saturate(100%) invert(100%) saturate(2%) hue-rotate(221deg) brightness(106%) contrast(101%);
+    transition: all 1.3s ease;
+  }
+
+  .link-redes:hover {
+    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%) hue-rotate(2deg) brightness(110%) contrast(102%);
+    transform: scale(1.1);
+    color: #ffd500;
+    transform: scale(1.1);
+    transition: all 1.3s ease;
+  }
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
-  .productos-container {
-    display: flex;
-    justify-content: center !important;
-    width: 100% !important;
-    flex-wrap: wrap;
-    gap: 1px 1px;
-  }
-
-  .col-productos {
-    display: flex;
+  /* Redes */
+  /* Links footer */
+  .footer-container {
+    width: 100%;
+    height: 145px;
     justify-content: center;
-    width: 25%;
-    border-radius: 6px;
-    padding: 5px;
   }
 
-  .col-productos:hover {
-    transition: all 1.2s ease;
-    border-radius: 6px;
-    border-radius: 6px;
-    z-index: 100;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  }
-
-  .productos-box {
-    width: 50%;
-  }
-
-  /* Nav tiendas */
-  .navbar-tiendas {
+  .ul-footer {
     display: flex;
     justify-content: center;
     width: none;
-    flex-wrap: wrap;
-    margin-top: 10px;
+    gap: 24px;
   }
 
-  .ul-container-tiendas {
+  .li-footer {
     display: flex;
     justify-content: center;
     width: none;
-    align-items: center;
-    padding-left: 0 !important;
-    margin-bottom: 0 !important;
     list-style: none;
   }
 
-  .ul-container-tiendas li a {
-    font-size: 10px;
-    font-weight: 1000;
-    color: #6736bc;
+  .a-footer {
     display: flex;
     justify-content: center;
     width: none;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
     text-decoration: none;
     transition: all 1.3s ease;
-    margin: 20px;
   }
 
-  .inf-ad-container-tiendas {
+  .a-footer:hover {
     display: flex;
-    justify-content: center !important;
-    width: 100% !important;
-    flex-wrap: wrap;
-    padding: 0 !important;
+    justify-content: center;
+    width: none;
     list-style: none;
-    margin: 100px;
+    color: #ffd500;
+    transform: scale(1.1);
+    transition: all 1.3s ease;
+    font-weight: 600;
   }
+
+  .p-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+    padding-right: 20px;
+  }
+
+  .inf-ad-container {
+    display: none;
+  }
+
+  /* End Redes */
 }
 /* Login */
 .bd-login {
@@ -3346,8 +3116,8 @@
 /* End Registrarse */
 /* Paleta de colores */
 /* Fuente */
-@media only screen and (min-width: 564px) and (max-width: 990px) {
-  /*  Barra de busqueda  */
+@media only screen and (min-width: 754px) and (max-width: 1280px) {
+  /*  Nav  */
   .input-search {
     display: flex;
     justify-content: none;
@@ -3379,110 +3149,77 @@
     flex-direction: row !important;
   }
 
-  .navbar-brand {
+  .marcas-container {
     margin: 0 !important;
+    padding: 0 !important;
   }
 
-  /*  Logo  */
-  .logo-container {
+  .grid-container-marcas {
+    margin-right: 0 !important;
+  }
+
+  /*  End Nav  */
+  /* Whatsapp */
+  .ico-whatsapp {
     display: flex;
-    justify-content: center;
-    width: 25%;
-    margin-right: 0 !important;
+    justify-content: none;
+    width: 10px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 10px;
+    z-index: 9999;
   }
 
-  .logo-img {
-    width: 100%;
-    margin-right: 0 !important;
+  .ico-whatsapp img {
+    display: flex;
+    justify-content: none;
+    width: 50%;
+    flex-wrap: wrap;
   }
-}
-@media only screen and (min-width: 200px) and (max-width: 563px) {
-  /*  Links */
-  .ul-container {
+
+  .aside-grid {
+    display: flex;
+    justify-content: none;
+    width: 55px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    z-index: 9999;
+  }
+
+  .img-container-grid div {
     display: flex;
     justify-content: none;
     width: 100%;
     flex-wrap: wrap;
-    text-align: center;
-    flex-direction: row !important;
-  }
-
-  .nav-item {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-    margin: 1px;
-  }
-
-  .txt-navlink {
-    font-size: 16px;
-    font-weight: 1000;
-    color: #fff !important;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 6px;
     transition: all 1.3s ease;
   }
 
-  .nav-img {
-    width: 30%;
-    filter: brightness(0) saturate(100%) invert(100%) saturate(2%) hue-rotate(221deg) brightness(106%) contrast(101%);
+  .img-container-grid img {
+    width: 40px;
+    border-radius: 6px;
     transition: all 1.3s ease;
-    /* Logo */
-    /* Links */
-    /*  Barra de busqueda  */
-    /* Carrito */
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
   }
-  .nav-img:hover {
-    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%) hue-rotate(2deg) brightness(110%) contrast(102%);
-    transform: scale(1.1);
-    color: #ffd500;
-    transform: scale(1.1);
-    transition: all 1.3s ease;
+
+  .img-container-grid img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
   }
-  .nav-img .navbar-brand {
-    margin: 0 !important;
+
+  .aside-mascota {
+    display: none;
   }
-  .nav-img .logo-container {
-    display: flex;
-    justify-content: center;
-    width: 20%;
-    margin-right: 0 !important;
-  }
-  .nav-img .logo-img {
-    width: 100%;
-    margin-right: 0 !important;
-  }
-  .nav-img .ul-container {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    text-align: center;
-    flex-direction: row !important;
-  }
-  .nav-img .input-search {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    height: auto;
-    transition: all 2s ease;
-    outline: none;
-    border: none;
-    border-color: none !important;
-  }
-  .nav-img .input-search:hover {
-    display: flex;
-    justify-content: none;
-    width: 90%;
-    transition: all 2s ease;
-    outline-width: 0;
-    outline: none;
-    border: none;
-    border-color: none !important;
-  }
-  .nav-img .nav-img {
-    width: 30%;
-  }
-}
-/* Información adicional */
-@media only screen and (min-width: 581px) and (max-width: 1280px) {
+
+  /* End Whatsapp */
+  /* Información adicional */
   .inf-ad-container {
     margin: 80px 0;
     width: 100%;
@@ -3522,144 +3259,27 @@
     align-items: center;
     margin-bottom: 0 !important;
   }
-}
-@media only screen and (min-width: 200px) and (max-width: 580px) {
+
   .inf-ad-container {
-    display: none;
-  }
-}
-/* Whatsapp */
-@media only screen and (min-width: 550px) and (max-width: 1280px) {
-  .ico-whatsapp {
     display: flex;
-    justify-content: none;
-    width: 10px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 35px;
-    right: 45px;
-    z-index: 9999;
-  }
-
-  .ico-whatsapp img {
-    display: flex;
-    justify-content: none;
-    width: 50%;
-    flex-wrap: wrap;
-  }
-
-  .aside-grid {
-    display: flex;
-    justify-content: none;
-    width: 55px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 35px;
-    right: 60px;
-    z-index: 9999;
-  }
-
-  .img-container-grid div {
-    display: flex;
-    justify-content: none;
+    justify-content: center;
     width: 100%;
-    flex-wrap: wrap;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
   }
 
-  .img-container-grid img {
-    width: 40px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-  }
-
-  .img-container-grid img:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-  }
-
-  .aside-mascota {
-    display: none;
-  }
-}
-@media only screen and (min-width: 300px) and (max-width: 600px) {
-  .ico-whatsapp {
-    display: flex;
-    justify-content: none;
-    width: 8px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 35px;
-    right: 0px;
-    z-index: 9999;
-  }
-
-  .ico-whatsapp img {
-    display: flex;
-    justify-content: none;
-    width: 10%;
-    flex-wrap: wrap;
-  }
-
-  .aside-grid {
-    display: flex;
-    justify-content: none;
-    width: 40px;
-    flex-wrap: wrap;
-    position: fixed;
-    bottom: 20px;
-    right: 0px;
-    z-index: 9999;
-  }
-
-  .img-container-grid div {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    flex-wrap: wrap;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
-  }
-
-  .img-container-grid img {
-    width: 30px;
-    border-radius: 6px;
-    transition: all 1.3s ease;
-    transform: scale(1);
-    -webkit-transform: scale(1);
-    -moz-transform: scale(1);
-  }
-
-  .img-container-grid img:hover {
-    transform: scale(1.2);
-    -webkit-transform: scale(1.2);
-    -moz-transform: scale(1.2);
-  }
-
-  .aside-mascota {
-    display: none;
-  }
-}
-/* Redes footer */
-@media only screen and (min-width: 550px) and (max-width: 1280px) {
+  /* End Información adicional */
+  /* Redes */
   .redes {
     display: flex;
     justify-content: center;
-    width: none;
+    width: 100%;
   }
 
   .li-redes {
     display: flex;
     justify-content: center !important;
-    width: 10%;
+    width: 9%;
     list-style: none;
+    margin-top: 2px;
   }
 
   .img-redes {
@@ -3685,42 +3305,7 @@
   }
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
-  .redes {
-    display: flex;
-    justify-content: center;
-    width: 100%;
-  }
-
-  .li-redes {
-    display: flex;
-    justify-content: center !important;
-    width: 20%;
-    list-style: none;
-    margin-top: 10px;
-  }
-
-  .img-redes {
-    display: flex;
-    justify-content: none;
-    width: 100%;
-    flex-direction: column;
-  }
-
-  .link-redes {
-    display: flex;
-    text-decoration: none;
-    filter: brightness(0) saturate(100%) invert(100%) saturate(2%) hue-rotate(221deg) brightness(106%) contrast(101%);
-    transition: all 1.3s ease;
-  }
-
-  .link-redes:hover {
-    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%) hue-rotate(2deg) brightness(110%) contrast(102%);
-    transform: scale(1.1);
-    color: #ffd500;
-    transform: scale(1.1);
-    transition: all 1.3s ease;
-  }
-
+  /* Redes */
   /* Links footer */
   .footer-container {
     width: 100%;
@@ -3773,76 +3358,219 @@
     color: #fff;
     padding-right: 20px;
   }
+
+  .inf-ad-container {
+    display: none;
+  }
+
+  /* End Redes */
+}
+@media only screen and (min-width: 300px) and (max-width: 754px) {
+  /* Whatsapp */
+  .ico-whatsapp {
+    display: flex;
+    justify-content: none;
+    width: 10px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 10px;
+    z-index: 9999;
+  }
+
+  .ico-whatsapp img {
+    display: flex;
+    justify-content: none;
+    width: 50%;
+    flex-wrap: wrap;
+  }
+
+  .aside-grid {
+    display: flex;
+    justify-content: none;
+    width: 55px;
+    flex-wrap: wrap;
+    position: fixed;
+    bottom: 35px;
+    right: 30px;
+    z-index: 9999;
+  }
+
+  .img-container-grid div {
+    display: flex;
+    justify-content: none;
+    width: 100%;
+    flex-wrap: wrap;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+    border-radius: 6px;
+    transition: all 1.3s ease;
+  }
+
+  .img-container-grid img {
+    width: 40px;
+    border-radius: 6px;
+    transition: all 1.3s ease;
+    transform: scale(1);
+    -webkit-transform: scale(1);
+    -moz-transform: scale(1);
+  }
+
+  .img-container-grid img:hover {
+    transform: scale(1.2);
+    -webkit-transform: scale(1.2);
+    -moz-transform: scale(1.2);
+  }
+
+  .aside-mascota {
+    display: none;
+  }
+
+  /* End Whatsapp */
+  /* Información adicional */
+  .inf-ad-container {
+    margin: 80px 0;
+    width: 100%;
+  }
+
+  .items-inf-ad {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 100%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 12px 28px 0px, rgba(0, 0, 0, 0.1) 0px 2px 4px 0px, rgba(255, 255, 255, 0.05) 0px 0px 0px 1px inset;
+  }
+
+  .items-inf-ad:hover {
+    background: linear-gradient(300deg, #ffd500, #c74693);
+    background-size: 600% 100%;
+    -webkit-animation: AnimationName 20s ease infinit;
+    -moz-animation: AnimationName 20s ease infinit;
+    -o-animation: AnimationName 20s ease infinit;
+    animation: AnimationName 20s ease infinit;
+    border-radius: 10px;
+  }
+
+  .ico-inf-ad {
+    display: flex;
+    justify-content: none;
+    width: 22%;
+    align-items: center;
+  }
+
+  .txt-inf-ad {
+    font-size: 8px;
+    font-weight: 1000;
+    color: none;
+    display: flex;
+    align-items: center;
+    margin-bottom: 0 !important;
+  }
+
+  .inf-ad-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  /* End Información adicional */
+  /* Redes */
+  .redes {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+  }
+
+  .li-redes {
+    display: flex;
+    justify-content: center !important;
+    width: 15%;
+    list-style: none;
+    margin-top: 2px;
+  }
+
+  .img-redes {
+    display: flex;
+    justify-content: none;
+    width: 100%;
+    flex-direction: column;
+  }
+
+  .link-redes {
+    display: flex;
+    text-decoration: none;
+    filter: brightness(0) saturate(100%) invert(100%) saturate(2%) hue-rotate(221deg) brightness(106%) contrast(101%);
+    transition: all 1.3s ease;
+  }
+
+  .link-redes:hover {
+    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%) hue-rotate(2deg) brightness(110%) contrast(102%);
+    transform: scale(1.1);
+    color: #ffd500;
+    transform: scale(1.1);
+    transition: all 1.3s ease;
+  }
 }
 @media only screen and (min-width: 300px) and (max-width: 600px) {
-  .productos-container {
-    display: flex;
-    justify-content: center !important;
-    width: 100% !important;
-    flex-wrap: wrap;
-    gap: 1px 1px;
-  }
-
-  .col-productos {
-    display: flex;
+  /* Redes */
+  /* Links footer */
+  .footer-container {
+    width: 100%;
+    height: 145px;
     justify-content: center;
-    width: 25%;
-    border-radius: 6px;
-    padding: 5px;
   }
 
-  .col-productos:hover {
-    transition: all 1.2s ease;
-    border-radius: 6px;
-    border-radius: 6px;
-    z-index: 100;
-    box-shadow: rgba(0, 0, 0, 0.25) 0px 14px 28px, rgba(0, 0, 0, 0.22) 0px 10px 10px;
-  }
-
-  .productos-box {
-    width: 50%;
-  }
-
-  /* Nav tiendas */
-  .navbar-tiendas {
+  .ul-footer {
     display: flex;
     justify-content: center;
     width: none;
-    flex-wrap: wrap;
-    margin-top: 10px;
+    gap: 24px;
   }
 
-  .ul-container-tiendas {
+  .li-footer {
     display: flex;
     justify-content: center;
     width: none;
-    align-items: center;
-    padding-left: 0 !important;
-    margin-bottom: 0 !important;
     list-style: none;
   }
 
-  .ul-container-tiendas li a {
-    font-size: 10px;
-    font-weight: 1000;
-    color: #6736bc;
+  .a-footer {
     display: flex;
     justify-content: center;
     width: none;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
     text-decoration: none;
     transition: all 1.3s ease;
-    margin: 20px;
   }
 
-  .inf-ad-container-tiendas {
+  .a-footer:hover {
     display: flex;
-    justify-content: center !important;
-    width: 100% !important;
-    flex-wrap: wrap;
-    padding: 0 !important;
+    justify-content: center;
+    width: none;
     list-style: none;
-    margin: 100px;
+    color: #ffd500;
+    transform: scale(1.1);
+    transition: all 1.3s ease;
+    font-weight: 600;
   }
+
+  .p-footer {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    font-size: 10px;
+    font-weight: 600;
+    color: #fff;
+    padding-right: 20px;
+  }
+
+  .inf-ad-container {
+    display: none;
+  }
+
+  /* End Redes */
 }
 .title-h3 {
   display: flex;

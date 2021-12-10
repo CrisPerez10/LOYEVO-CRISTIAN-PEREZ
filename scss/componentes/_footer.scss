@@ -4,7 +4,7 @@
 /* Footer  */
 /* Redes */
 .redes {
-  @include flex(flex, center, none);
+  @include flex(flex, center, auto);
 }
 
 .li-redes {
