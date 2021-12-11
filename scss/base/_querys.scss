@@ -12,7 +12,7 @@
   }
 
   .input-search:hover {
-    @include flex(flex, none, 95%);
+    @include flex(flex, none, 92%);
     height: 40px;
     transition: all 2s ease;
     outline-width: 0;
@@ -22,7 +22,7 @@
   }
 
   .ul-container {
-    @include flex(flex, none, 100%);
+    @include flex(flex, none, 55%);
     text-align: center;
     flex-direction: row !important;
   }
@@ -169,58 +169,16 @@
     transform: scale(1.1);
     transition: all 1.3s ease;
   }
-}
-
-@media only screen and (min-width: 300px) and (max-width: 600px) {
-  /* Redes */
-
-  /* Links footer */
 
   .footer-container {
     width: 100%;
-    height: 145px;
+    height: 200px;
     justify-content: center;
   }
 
-  .ul-footer {
-    @include flex(flex, center, none);
-    gap: 24px;
-  }
-
-  .li-footer {
-    @include flex(flex, center, none);
-    list-style: none;
-  }
-
-  .a-footer {
-    @include flex(flex, center, none);
-    @include font(10px, 600, $bg-white);
-    text-decoration: none;
-    transition: all 1.3s ease;
-  }
-
-  .a-footer:hover {
-    @include flex(flex, center, none);
-    list-style: none;
-    color: $bg-yellow;
-    transform: scale(1.1);
-    transition: all 1.3s ease;
-    font-weight: 600;
-  }
-
-  .p-footer {
-    @include flex(flex, center, 100%);
-    @include font(10px, 600, $bg-white);
-    padding-right: 20px;
-  }
-
-  .inf-ad-container {
-    display: none;
-  }
-  /* End Redes */
 }
 
-@media only screen and (min-width: 300px) and (max-width: 754px) {
+@media only screen and (min-width: 600px) and (max-width: 754px) {
   /* Whatsapp */
 
   .ico-whatsapp {
@@ -319,8 +277,13 @@
   }
 
   /* End Información adicional */
+  
 
   /* Redes */
+
+  ul {
+    padding-left: 0 !important;    
+   }
 
   .redes {
     @include flex(flex, center, 100%);
@@ -333,7 +296,7 @@
   }
 
   .img-redes {
-    @include flex(flex, none, 100%);
+    @include flex(flex, none, 10%);
     flex-direction: column;
   }
 
@@ -355,20 +318,90 @@
   }
 }
 
-@media only screen and (min-width: 300px) and (max-width: 600px) {
-  /* Redes */
+@media only screen and (min-width: 280px) and (max-width: 600px) {
 
-  /* Links footer */
+    /*  Nav  */
 
-  .footer-container {
-    width: 100%;
-    height: 145px;
-    justify-content: center;
+    .logo-container {
+      width: 28%;
+      padding: 0!important;
+      margin: 0 !important;
+    }
+
+    .input-search {
+      @include flex(flex, none, 100%);
+      height: 40px;
+      transition: all 2s ease;
+      outline: none;
+      border: none;
+      border-color: none !important;
+    }
+  
+    .input-search:hover {
+      @include flex(flex, none, 88%);
+      height: 40px;
+      transition: all 2s ease;
+      outline-width: 0;
+      outline: none;
+      border: none;
+      border-color: none !important;
+    }
+  
+    .ul-container {
+      @include flex(flex, none, 100%);
+      text-align: center;
+      flex-direction: row !important;
+    }
+
+  
+    .marcas-container {
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  
+    .grid-container-marcas {
+      margin-right: 0 !important;
+    }
+    /*  End Nav  */
+
+
+   /* Redes */
+
+   ul {
+    padding-left: 0 !important;    
+   }
+
+   .redes {
+    @include flex(flex, center,100%);
+  }
+
+  .li-redes {
+    @include flex(flex, center !important, 20%);
+    list-style: none;
+  }
+
+  .img-redes {
+    @include flex(flex, center, 100%);
+    flex-direction: column;
+  }
+
+  .link-redes {
+    display: flex;
+    text-decoration: none;
+    filter: brightness(0) saturate(100%) invert(100%) saturate(2%)
+      hue-rotate(221deg) brightness(106%) contrast(101%);
+    transition: all 1.3s ease;
+  }
+
+  .link-redes:hover {
+    filter: brightness(0) saturate(100%) invert(79%) sepia(9%) saturate(6816%)
+      hue-rotate(2deg) brightness(110%) contrast(102%);
+    color: $bg-yellow;
+    transition: all 1.3s ease;
   }
 
   .ul-footer {
     @include flex(flex, center, none);
-    gap: 24px;
   }
 
   .li-footer {
@@ -378,9 +411,10 @@
 
   .a-footer {
     @include flex(flex, center, none);
-    @include font(10px, 600, $bg-white);
+    @include font(12px, 600, $bg-white);
     text-decoration: none;
     transition: all 1.3s ease;
+    margin-bottom: 8px
   }
 
   .a-footer:hover {
@@ -394,12 +428,92 @@
 
   .p-footer {
     @include flex(flex, center, 100%);
-    @include font(10px, 600, $bg-white);
+    @include font(8px, 600, $bg-white);
     padding-right: 20px;
+    text-align: ceil($number: 0);
   }
 
   .inf-ad-container {
     display: none;
   }
   /* End Redes */
+
+    /* Whatsapp */
+
+    .ico-whatsapp {
+      @include flex-grid(flex, none, 10px, wrap);
+      position: fixed;
+      bottom: 35px;
+      right: 10px;
+      z-index: 9999;
+    }
+  
+    .ico-whatsapp img {
+      @include flex-grid(flex, none, 50%, wrap);
+    }
+  
+    .aside-grid {
+      @include flex-grid(flex, none, 55px, wrap);
+      position: fixed;
+      bottom: 35px;
+      right: 10px;
+      z-index: 9999;
+    }
+  
+    .img-container-grid div {
+      @include flex-grid(flex, none, 100%, wrap);
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px,
+        rgba(0, 0, 0, 0.3) 0px 18px 36px -18px;
+      border-radius: 6px;
+      transition: all 1.3s ease;
+    }
+  
+    .img-container-grid img {
+      width: 40px;
+      border-radius: 6px;
+      transition: all 1.3s ease;
+      transform: scale(1);
+      -webkit-transform: scale(1);
+      -moz-transform: scale(1);
+    }
+  
+    .img-container-grid img:hover {
+      transform: scale(1.2);
+      -webkit-transform: scale(1.2);
+      -moz-transform: scale(1.2);
+    }
+  
+    .aside-mascota {
+      display: none;
+    }
+  
+    /* End Whatsapp */
+
+
+    .box-pd-conteiner {
+      margin: 20px 0 0 0;
+
+    }
+
+  /* Footer de Defensa al consumidor y politicas de devolución */
+
+    .title-h1 {
+      font-size: 25px;
+      margin: 30px 0 0 0;
+      padding: 0 !important;
+    }
+  
+    .box-pd-p {
+      font-size: 11px;
+      display: flex;
+      flex-direction: row;
+      margin: 0 !important;
+      padding: 0 !important;
+    }
+  
+    .container-pddf {
+      position: sticky;
+      bottom: 0 !important;
+    }
+   /* End Footer de Defensa al consumidor y politicas de devolución */
 }

@@ -2,23 +2,25 @@
 @import "../base/misins";
 
 /* Footer  */
+
 /* Redes */
 .redes {
   @include flex(flex, center, auto);
 }
 
 .li-redes {
-  @include flex(flex, center !important, 5%);
+  @include flex(flex, center !important, 3%);
   list-style: none;
 }
 
 .img-redes {
-  @include flex(flex, none, 11%);
+  @include flex(flex, center, 60% !important);
   flex-direction: column;
 }
 
 .link-redes {
   display: flex;
+  justify-content: center;
   text-decoration: none;
   filter: brightness(0) saturate(100%) invert(100%) saturate(2%)
     hue-rotate(221deg) brightness(106%) contrast(101%);
@@ -71,7 +73,7 @@
 
 .p-footer {
   @include flex(flex, center, none);
-  font-size: 11px;
+  font-size: 20xpx;
   color: $bg-white;
   padding-left: 30px;
 }
