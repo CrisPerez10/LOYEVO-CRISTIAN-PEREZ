@@ -1,0 +1,47 @@
+@import "../base/variables";
+@import "../base/Querys.scss";
+@import "../base/misins";
+
+.li-container-carrito {
+  display: flex !important;
+  justify-content: space-between;
+  align-items: center;
+  gap: 30px;
+  font-weight: 700;
+
+  &:hover {
+    color: $bg-violet;
+  }
+}
+
+.img-carrito {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.img-carrito img {
+  display: flex !important;
+  width: 60px;
+  margin-right: 5px;
+}
+
+.btn-container {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-top: 50px;
+}
+
+.btn-loyevo {
+  background-color: $bg-violet !important;
+  color: $bg-white !important;
+  font-weight: bold;
+  border: 1px solid $bg-white;
+
+  &:hover {
+    background-color: $bg-white !important;
+    color: $bg-violet !important;
+    font-weight: bold;
+    border: 1px solid $bg-violet;
+  }
+}
